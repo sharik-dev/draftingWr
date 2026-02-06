@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-function ChampionTable({ recommendations, filter }) {
+function ChampionTable({ recommendations, filter, onChampionClick, isSelectionMode, takenChampions = [] }) {
     const [expandedId, setExpandedId] = useState(null);
     const [imageErrors, setImageErrors] = useState({});
+    const [hoveredId, setHoveredId] = useState(null);
 
     const filteredRecs = recommendations.filter(rec =>
         rec.champion.name.toLowerCase().includes(filter.toLowerCase())
@@ -41,6 +42,31 @@ function ChampionTable({ recommendations, filter }) {
         );
     }
 
+    const handleRowClick = (rec, e) => {
+        // Check if champion is already taken
+        const isTaken = takenChampions.includes(rec.champion.id);
+        if (isTaken && isSelectionMode) {
+            // Don't allow selection of taken champions
+            return;
+        }
+
+        // Check if clicking on expand button area (right side)
+        const rect = e.currentTarget.getBoundingClientRect();
+        const clickX = e.clientX - rect.left;
+        const isExpandButtonArea = clickX > rect.width - 60; // Last 60px is expand button area
+
+        if (isExpandButtonArea) {
+            // Always toggle expand when clicking the button area
+            toggleExpand(rec.champion.id);
+        } else if (isSelectionMode && onChampionClick) {
+            // In selection mode, clicking the main area selects the champion
+            onChampionClick(rec.champion);
+        } else {
+            // Otherwise toggle expand
+            toggleExpand(rec.champion.id);
+        }
+    };
+
     const toggleExpand = (id) => {
         setExpandedId(expandedId === id ? null : id);
     };
@@ -76,15 +102,25 @@ function ChampionTable({ recommendations, filter }) {
                 const hasImageError = imageErrors[rec.champion.id];
                 const scoreColor = getScoreColor(rec.total_score);
                 const scoreGrade = getScoreGrade(rec.total_score);
+                const isHovered = hoveredId === rec.champion.id;
+                const isTaken = takenChampions.includes(rec.champion.id);
 
                 return (
                     <React.Fragment key={rec.champion.id}>
                         <div
                             className="rec-row"
-                            onClick={() => toggleExpand(rec.champion.id)}
+                            onClick={(e) => handleRowClick(rec, e)}
+                            onMouseEnter={() => !isTaken && setHoveredId(rec.champion.id)}
+                            onMouseLeave={() => setHoveredId(null)}
                             style={{
                                 animationDelay: `${index * 0.05}s`,
-                                animation: 'slideInFromLeft 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) both'
+                                animation: 'slideInFromLeft 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) both',
+                                cursor: isTaken ? 'not-allowed' : (isSelectionMode ? 'pointer' : 'default'),
+                                border: isTaken ? '1px solid rgba(255, 255, 255, 0.1)' : (isSelectionMode && isHovered ? '2px solid var(--c-gold-1)' : undefined),
+                                boxShadow: isTaken ? 'none' : (isSelectionMode && isHovered ? '0 0 20px rgba(212, 175, 55, 0.3)' : undefined),
+                                position: 'relative',
+                                opacity: isTaken ? 0.4 : 1,
+                                pointerEvents: isTaken && isSelectionMode ? 'none' : 'auto'
                             }}
                         >
                             {/* Role Viability */}
@@ -169,9 +205,41 @@ function ChampionTable({ recommendations, filter }) {
                                     minWidth: 0,
                                     flex: 1
                                 }}>
-                                    <span className="rec-name">
-                                        {rec.champion.name}
-                                    </span>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                        <span className="rec-name">
+                                            {rec.champion.name}
+                                        </span>
+                                        {/* Tier Badge */}
+                                        {rec.tier_name && (
+                                            <span style={{
+                                                fontSize: '0.65rem',
+                                                padding: '2px 8px',
+                                                background: rec.tier_name === 'S+' ? 'linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(255, 140, 0, 0.3))' :
+                                                    rec.tier_name === 'S' ? 'rgba(255, 215, 0, 0.2)' :
+                                                        rec.tier_name === 'A' ? 'rgba(76, 201, 240, 0.2)' :
+                                                            rec.tier_name === 'B' ? 'rgba(100, 255, 100, 0.15)' :
+                                                                'rgba(150, 150, 150, 0.15)',
+                                                border: rec.tier_name === 'S+' ? '1px solid rgba(255, 215, 0, 0.6)' :
+                                                    rec.tier_name === 'S' ? '1px solid rgba(255, 215, 0, 0.5)' :
+                                                        rec.tier_name === 'A' ? '1px solid rgba(76, 201, 240, 0.5)' :
+                                                            rec.tier_name === 'B' ? '1px solid rgba(100, 255, 100, 0.4)' :
+                                                                '1px solid rgba(150, 150, 150, 0.4)',
+                                                borderRadius: '4px',
+                                                color: rec.tier_name === 'S+' ? '#FFD700' :
+                                                    rec.tier_name === 'S' ? '#FFC700' :
+                                                        rec.tier_name === 'A' ? '#4CC9F0' :
+                                                            rec.tier_name === 'B' ? '#64FF64' :
+                                                                '#AAA',
+                                                fontFamily: 'var(--font-header)',
+                                                fontWeight: '800',
+                                                textTransform: 'uppercase',
+                                                letterSpacing: '0.5px',
+                                                textShadow: rec.tier_name.startsWith('S') ? '0 0 8px rgba(255, 215, 0, 0.5)' : 'none'
+                                            }}>
+                                                {rec.tier_name}
+                                            </span>
+                                        )}
+                                    </div>
 
                                     {/* Additional info badges */}
                                     <div style={{
@@ -179,6 +247,22 @@ function ChampionTable({ recommendations, filter }) {
                                         gap: '6px',
                                         flexWrap: 'wrap'
                                     }}>
+                                        {isTaken && (
+                                            <span style={{
+                                                fontSize: '0.65rem',
+                                                padding: '2px 6px',
+                                                background: 'rgba(255, 255, 255, 0.15)',
+                                                border: '1px solid rgba(255, 255, 255, 0.4)',
+                                                borderRadius: '4px',
+                                                color: 'rgba(255, 255, 255, 0.8)',
+                                                fontFamily: 'var(--font-mono)',
+                                                fontWeight: '700',
+                                                textTransform: 'uppercase',
+                                                letterSpacing: '0.5px'
+                                            }}>
+                                                ✓ PICKED
+                                            </span>
+                                        )}
                                         {rec.synergy_explanations.length > 0 && (
                                             <span style={{
                                                 fontSize: '0.65rem',
@@ -506,12 +590,18 @@ ChampionTable.propTypes = {
         counter_explanations: PropTypes.arrayOf(PropTypes.string),
         vulnerability_explanations: PropTypes.arrayOf(PropTypes.string)
     })).isRequired,
-    filter: PropTypes.string.isRequired
+    filter: PropTypes.string.isRequired,
+    onChampionClick: PropTypes.func,
+    isSelectionMode: PropTypes.bool,
+    takenChampions: PropTypes.arrayOf(PropTypes.string)
 };
 
 ChampionTable.defaultProps = {
     recommendations: [],
-    filter: ''
+    filter: '',
+    onChampionClick: null,
+    isSelectionMode: false,
+    takenChampions: []
 };
 
 export default ChampionTable;

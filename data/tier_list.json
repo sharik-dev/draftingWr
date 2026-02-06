@@ -1,0 +1,504 @@
+{
+    "tier_scoring": {
+        "S+": 1.0,
+        "S": 0.9,
+        "A": 0.75,
+        "B": 0.6,
+        "C": 0.4,
+        "D": 0.2
+    },
+    "champion_tiers": {
+        "aatrox": {
+            "tier": "A",
+            "notes": "Strong sustain and teamfight presence"
+        },
+        "ahri": {
+            "tier": "S",
+            "notes": "High mobility, safe laning, good pick potential"
+        },
+        "akali": {
+            "tier": "A",
+            "notes": "High skill cap assassin, strong in right hands"
+        },
+        "akshan": {
+            "tier": "B",
+            "notes": "Unique revive mechanic but inconsistent"
+        },
+        "alistar": {
+            "tier": "A",
+            "notes": "Excellent engage and peel tank support"
+        },
+        "ambessa": {
+            "tier": "S",
+            "notes": "New strong fighter with great outplay potential"
+        },
+        "amumu": {
+            "tier": "S",
+            "notes": "Game-changing ultimate, strong jungle clear"
+        },
+        "annie": {
+            "tier": "B",
+            "notes": "Good burst but telegraphed engage"
+        },
+        "ashe": {
+            "tier": "A",
+            "notes": "Great utility ADC with global ult"
+        },
+        "aurelion_sol": {
+            "tier": "B",
+            "notes": "Unique roaming playstyle, map pressure"
+        },
+        "blitzcrank": {
+            "tier": "A",
+            "notes": "Hook can win games, high impact support"
+        },
+        "brand": {
+            "tier": "B",
+            "notes": "High damage but immobile"
+        },
+        "braum": {
+            "tier": "A",
+            "notes": "Excellent projectile denial and peel"
+        },
+        "caitlyn": {
+            "tier": "A",
+            "notes": "Safe laning, good poke and siege"
+        },
+        "camille": {
+            "tier": "S+",
+            "notes": "Elite duelist, true damage, lockdown ultimate"
+        },
+        "corki": {
+            "tier": "C",
+            "notes": "Weak early game, scales but inconsistent"
+        },
+        "darius": {
+            "tier": "S",
+            "notes": "Lane bully, executes, dominates low mobility"
+        },
+        "diana": {
+            "tier": "S",
+            "notes": "Strong AP assassin/fighter, great engage"
+        },
+        "dr_mundo": {
+            "tier": "A",
+            "notes": "Unkillable tank with percentage health damage"
+        },
+        "draven": {
+            "tier": "B",
+            "notes": "High damage but requires snowball"
+        },
+        "ekko": {
+            "tier": "S+",
+            "notes": "Ultimate assassin mobility, huge outplay potential"
+        },
+        "evelynn": {
+            "tier": "A",
+            "notes": "Stealth assassin, terrorizes squishies"
+        },
+        "ezreal": {
+            "tier": "S",
+            "notes": "Safest ADC, poke, mobility, global ult"
+        },
+        "fiddlesticks": {
+            "tier": "B",
+            "notes": "Fear and drain, good in chaotic fights"
+        },
+        "fiora": {
+            "tier": "S+",
+            "notes": "Best duelist, true damage, riposte counters"
+        },
+        "fizz": {
+            "tier": "A",
+            "notes": "Slippery assassin, untargetable E"
+        },
+        "garen": {
+            "tier": "B",
+            "notes": "Simple but lacks mobility and CC"
+        },
+        "gragas": {
+            "tier": "A",
+            "notes": "Versatile tank/AP, displacement ultimate"
+        },
+        "graves": {
+            "tier": "S",
+            "notes": "Strong jungle duelist, tanky ADC"
+        },
+        "gwen": {
+            "tier": "A",
+            "notes": "AP fighter with huge true damage potential"
+        },
+        "gnar": {
+            "tier": "B",
+            "notes": "Dual form tank, hard to master"
+        },
+        "hecarim": {
+            "tier": "B",
+            "notes": "Speed engage jungler, fell off meta"
+        },
+        "heimerdinger": {
+            "tier": "C",
+            "notes": "Turret zone control, niche pick"
+        },
+        "irelia": {
+            "tier": "S+",
+            "notes": "Insane mobility, dueling, teamfight monster"
+        },
+        "janna": {
+            "tier": "B",
+            "notes": "Disengage queen but passive playstyle"
+        },
+        "jarvan_iv": {
+            "tier": "A",
+            "notes": "Solid engage tank jungle, versatile"
+        },
+        "jax": {
+            "tier": "S",
+            "notes": "Scales incredibly, dodges autos, duelist"
+        },
+        "jayce": {
+            "tier": "B",
+            "notes": "Poke/all-in but falls off late"
+        },
+        "jhin": {
+            "tier": "A",
+            "notes": "Long range sniper ADC, high burst"
+        },
+        "jinx": {
+            "tier": "S",
+            "notes": "Hypercarry, resets, massive teamfight damage"
+        },
+        "kai_sa": {
+            "tier": "S+",
+            "notes": "Hybrid damage, evolution spikes, safe"
+        },
+        "kalista": {
+            "tier": "C",
+            "notes": "Hard to play on mobile, niche"
+        },
+        "karma": {
+            "tier": "B",
+            "notes": "Poke and shields but lacks hard engage"
+        },
+        "karthus": {
+            "tier": "B",
+            "notes": "Global ult pressure, farm heavy"
+        },
+        "kassadin": {
+            "tier": "A",
+            "notes": "Anti-mage, scales hard, mobile"
+        },
+        "katarina": {
+            "tier": "S",
+            "notes": "Reset queen, pentakill potential"
+        },
+        "kayle": {
+            "tier": "A",
+            "notes": "Extreme late game hypercarry"
+        },
+        "kayn": {
+            "tier": "S+",
+            "notes": "Form versatility, red or blue dominates"
+        },
+        "kennen": {
+            "tier": "B",
+            "notes": "AOE stun engage but squishy"
+        },
+        "kha_zix": {
+            "tier": "S",
+            "notes": "Isolation assassin, evolves, resets"
+        },
+        "kindred": {
+            "tier": "B",
+            "notes": "Scaling marks, ultimate can backfire"
+        },
+        "kog_maw": {
+            "tier": "A",
+            "notes": "Shreds tanks, immobile hypercarry"
+        },
+        "lee_sin": {
+            "tier": "S+",
+            "notes": "Skill expression champion, mobility, kick"
+        },
+        "leona": {
+            "tier": "S",
+            "notes": "Lockdown engage support, tanky"
+        },
+        "lillia": {
+            "tier": "B",
+            "notes": "AP skirmisher jungle, movement speed"
+        },
+        "lulu": {
+            "tier": "S+",
+            "notes": "Best enchanter, polymorph, shields, ultimate"
+        },
+        "lux": {
+            "tier": "A",
+            "notes": "Long range mage, burst, shield"
+        },
+        "malphite": {
+            "tier": "S",
+            "notes": "Knockup ultimate, armor scaling, counters AD"
+        },
+        "master_yi": {
+            "tier": "A",
+            "notes": "Hypercarry melee, alpha strike dodges"
+        },
+        "maokai": {
+            "tier": "B",
+            "notes": "Engage tank, CC chain, saplings"
+        },
+        "miss_fortune": {
+            "tier": "A",
+            "notes": "AOE ultimate, strong laning phase"
+        },
+        "mordekaiser": {
+            "tier": "A",
+            "notes": "Death realm isolation, tanky AP"
+        },
+        "morgana": {
+            "tier": "S",
+            "notes": "Black shield negates CC, zone control"
+        },
+        "nami": {
+            "tier": "S",
+            "notes": "Sustain, CC, wave ultimate, versatile"
+        },
+        "nasus": {
+            "tier": "B",
+            "notes": "Infinite scaling but kitable"
+        },
+        "nautilus": {
+            "tier": "A",
+            "notes": "Point-click lockdown, tanky engage"
+        },
+        "nidalee": {
+            "tier": "C",
+            "notes": "High skill cap jungle, poke/heal"
+        },
+        "nilah": {
+            "tier": "A",
+            "notes": "Melee ADC, shared XP mechanic"
+        },
+        "nocturne": {
+            "tier": "A",
+            "notes": "Global darkness ultimate, assassin jungler"
+        },
+        "nunu_willump": {
+            "tier": "B",
+            "notes": "Objective control, snowball engage"
+        },
+        "olaf": {
+            "tier": "B",
+            "notes": "Unstoppable ult, runs down targets"
+        },
+        "orianna": {
+            "tier": "S",
+            "notes": "Teamfight mage, shield, game-winner ult"
+        },
+        "ornn": {
+            "tier": "A",
+            "notes": "Tank with item upgrades, knockup"
+        },
+        "pantheon": {
+            "tier": "A",
+            "notes": "Early game bully, point-click stun"
+        },
+        "poppy": {
+            "tier": "A",
+            "notes": "Anti-dash tank, wall stun"
+        },
+        "pyke": {
+            "tier": "A",
+            "notes": "Assassin support, execute gives gold"
+        },
+        "rammus": {
+            "tier": "B",
+            "notes": "Reflects damage, taunt, armor stacking"
+        },
+        "rakan": {
+            "tier": "S",
+            "notes": "Engage/disengage master, charm, mobility"
+        },
+        "renekton": {
+            "tier": "A",
+            "notes": "Lane bully, sustain, stun"
+        },
+        "rengar": {
+            "tier": "S",
+            "notes": "Camouflage assassin, one-shot potential"
+        },
+        "riven": {
+            "tier": "S+",
+            "notes": "Animation cancels, mobility, outplay queen"
+        },
+        "rumble": {
+            "tier": "B",
+            "notes": "AOE damage, overheat mechanic"
+        },
+        "samira": {
+            "tier": "S",
+            "notes": "Windwall, ultimate is pentakill button"
+        },
+        "senna": {
+            "tier": "A",
+            "notes": "Scaling ADC support, infinite range"
+        },
+        "seraphine": {
+            "tier": "A",
+            "notes": "AOE charm, shields, teamfight mage"
+        },
+        "sett": {
+            "tier": "A",
+            "notes": "Grit shield, W true damage, suplex"
+        },
+        "shen": {
+            "tier": "A",
+            "notes": "Global ultimate save, taunt engage"
+        },
+        "shyvana": {
+            "tier": "C",
+            "notes": "Dragon form power spike, farm heavy"
+        },
+        "singed": {
+            "tier": "C",
+            "notes": "Proxy farming, poison trail, niche"
+        },
+        "sion": {
+            "tier": "B",
+            "notes": "Infinite HP stacking, charge engage"
+        },
+        "sivir": {
+            "tier": "A",
+            "notes": "Waveclear queen, spell shield, speed ult"
+        },
+        "smolder": {
+            "tier": "B",
+            "notes": "Scaling dragon ADC, newer champion"
+        },
+        "sona": {
+            "tier": "A",
+            "notes": "Aura buffs, crescendo ultimate, scales"
+        },
+        "soraka": {
+            "tier": "S",
+            "notes": "Global heal, sustain queen, silences"
+        },
+        "syndra": {
+            "tier": "A",
+            "notes": "Burst mage, stun, orb control"
+        },
+        "talon": {
+            "tier": "A",
+            "notes": "Roaming assassin, parkour, burst"
+        },
+        "teemo": {
+            "tier": "B",
+            "notes": "Blind, shrooms, lane bully but scales poorly"
+        },
+        "thresh": {
+            "tier": "S+",
+            "notes": "Hook, lantern, flay - ultimate support kit"
+        },
+        "tristana": {
+            "tier": "A",
+            "notes": "Self-peel ADC, rocket jump resets"
+        },
+        "tryndamere": {
+            "tier": "B",
+            "notes": "Split push king, unkillable ult, RNG crits"
+        },
+        "twisted_fate": {
+            "tier": "A",
+            "notes": "Global ultimate, gold card stun, utility"
+        },
+        "twitch": {
+            "tier": "A",
+            "notes": "Stealth positioning, teamfight shredder"
+        },
+        "urgot": {
+            "tier": "B",
+            "notes": "Ranged juggernaut, execute ultimate"
+        },
+        "varus": {
+            "tier": "A",
+            "notes": "Poke or on-hit builds, root ultimate"
+        },
+        "vayne": {
+            "tier": "S+",
+            "notes": "Tank shredder, true damage, invisibility"
+        },
+        "veigar": {
+            "tier": "A",
+            "notes": "Infinite AP stacking, zone cage"
+        },
+        "vi": {
+            "tier": "S",
+            "notes": "Point-click ultimate lockdown, armor shred"
+        },
+        "viego": {
+            "tier": "S",
+            "notes": "Resets by possessing enemies, game-changer"
+        },
+        "vladimir": {
+            "tier": "A",
+            "notes": "Pool untargetable, sustain, AOE damage"
+        },
+        "volibear": {
+            "tier": "B",
+            "notes": "Dive potential, tower disable"
+        },
+        "warwick": {
+            "tier": "B",
+            "notes": "Healing sustain, suppression ult"
+        },
+        "wukong": {
+            "tier": "A",
+            "notes": "Clone mindgames, knockup ultimate"
+        },
+        "xayah": {
+            "tier": "S",
+            "notes": "Feathers, root, untargetable ultimate"
+        },
+        "xin_zhao": {
+            "tier": "A",
+            "notes": "Early game jungler, knockup, zone ult"
+        },
+        "yasuo": {
+            "tier": "S+",
+            "notes": "Windwall, knockup synergy, infinite scaling"
+        },
+        "yone": {
+            "tier": "S",
+            "notes": "Spirit form, shields, knock-up, teamfight"
+        },
+        "yorick": {
+            "tier": "C",
+            "notes": "Split push maiden, niche champion"
+        },
+        "yuumi": {
+            "tier": "B",
+            "notes": "Attach mechanic, heals, but team-dependent"
+        },
+        "zed": {
+            "tier": "S+",
+            "notes": "Shadow master assassin, outplay potential"
+        },
+        "zeri": {
+            "tier": "B",
+            "notes": "Mobile ADC, skill-shot autos, inconsistent"
+        },
+        "ziggs": {
+            "tier": "A",
+            "notes": "Siege king, execute tower, poke"
+        },
+        "zoe": {
+            "tier": "A",
+            "notes": "One-shot with paddle star, sleep CC"
+        },
+        "zyra": {
+            "tier": "A",
+            "notes": "Plant zone control, root, AOE knockup"
+        }
+    }
+}

@@ -20,9 +20,18 @@ class DraftEngine:
         self.champions = self._load_json("champions.json")["champions"]
         self.synergies = self._load_json("synergies.json")["synergies"]
         self.counters = self._load_json("counters.json")["counters"]
+        self.champion_counters = self._load_json("champion_counters.json")  # Specific champion matchups
+        self.tier_list = self._load_json("tier_list.json")  # Meta tier ratings
         
         # Create lookup dictionaries for faster access
         self.champion_map = {c["id"]: c for c in self.champions}
+        
+        # Create champion counter lookup map for quick access
+        self.champion_counter_map = {cc["champion"]: cc for cc in self.champion_counters}
+        
+        # Extract tier scoring and champion tiers
+        self.tier_scoring = self.tier_list.get("tier_scoring", {})
+        self.champion_tiers = self.tier_list.get("champion_tiers", {})
         
     def _load_json(self, filename: str) -> dict:
         """Load a JSON file from the data directory."""
@@ -53,6 +62,21 @@ class DraftEngine:
         # Sort by viability (highest first)
         viable.sort(key=lambda x: x["role_viability"], reverse=True)
         return viable
+    
+    def get_tier_score(self, champion_id: str) -> float:
+        """
+        Get the tier score for a champion based on current meta.
+        
+        Args:
+            champion_id: Champion ID
+            
+        Returns:
+            Tier score (0.0 to 1.0), defaults to 0.5 if not in tier list
+        """
+        if champion_id in self.champion_tiers:
+            tier = self.champion_tiers[champion_id].get("tier", "B")
+            return self.tier_scoring.get(tier, 0.5)
+        return 0.5  # Default to middle tier if not found
     
     def calculate_synergy_score(self, champion: Dict, team: List[str]) -> Tuple[float, List[str]]:
         """
@@ -118,7 +142,33 @@ class DraftEngine:
         
         champ_tags = set(champion.get("kit_tags", []))
         champ_tags.add(champion["id"])
+        champ_id = champion["id"]
         
+        # Check for specific champion counters first (higher priority)
+        if champ_id in self.champion_counter_map:
+            champion_matchups = self.champion_counter_map[champ_id]
+            
+            # Check counters (champions this champion counters)
+            for counter in champion_matchups.get("counters", []):
+                if counter["target"] in enemy_team:
+                    bonus_score = counter["strength"]
+                    total_score += bonus_score
+                    enemy_name = self.champion_map.get(counter["target"], {}).get("name", counter["target"])
+                    explanations.append(
+                        f"⚔ Matchup Advantage vs {enemy_name}: {counter['reason']} (+{bonus_score:.2f})"
+                    )
+            
+            # Check strong_against (additional positive matchups)
+            for strong in champion_matchups.get("strong_against", []):
+                if strong["target"] in enemy_team:
+                    bonus_score = strong["strength"]
+                    total_score += bonus_score
+                    enemy_name = self.champion_map.get(strong["target"], {}).get("name", strong["target"])
+                    explanations.append(
+                        f"⚔ Strong Against {enemy_name}: {strong['reason']} (+{bonus_score:.2f})"
+                    )
+        
+        # Then check archetype-based counters
         for enemy_id in enemy_team:
             if enemy_id not in self.champion_map:
                 continue
@@ -161,7 +211,38 @@ class DraftEngine:
         explanations = []
         
         champ_tags = set(champion.get("kit_tags", []))
+        champ_id = champion["id"]
         
+        # Check for specific champion vulnerabilities (being countered)
+        for enemy_id in enemy_team:
+            if enemy_id not in self.champion_map:
+                continue
+            
+            # Check if the enemy champion has this champion in their counters list
+            if enemy_id in self.champion_counter_map:
+                enemy_matchups = self.champion_counter_map[enemy_id]
+                
+                # Check if we're in their counters list
+                for counter in enemy_matchups.get("counters", []):
+                    if counter["target"] == champ_id:
+                        penalty_score = abs(counter["strength"])  # Negative becomes positive penalty
+                        total_score += penalty_score
+                        enemy_name = self.champion_map.get(enemy_id, {}).get("name", enemy_id)
+                        explanations.append(
+                            f"⚠ Hard Countered by {enemy_name}: {counter['reason']} (-{penalty_score:.2f})"
+                        )
+                
+                # Check strong_against
+                for strong in enemy_matchups.get("strong_against", []):
+                    if strong["target"] == champ_id:
+                        penalty_score = abs(strong["strength"])
+                        total_score += penalty_score
+                        enemy_name = self.champion_map.get(enemy_id, {}).get("name", enemy_id)
+                        explanations.append(
+                            f"⚠ Weak Against {enemy_name}: {strong['reason']} (-{penalty_score:.2f})"
+                        )
+        
+        # Then check archetype-based vulnerabilities
         for enemy_id in enemy_team:
             if enemy_id not in self.champion_map:
                 continue
@@ -229,19 +310,27 @@ class DraftEngine:
             synergy_score, synergy_exp = self.calculate_synergy_score(champ, team)
             counter_score, counter_exp = self.calculate_counter_score(champ, enemy_team)
             vulnerability_score, vulnerability_exp = self.calculate_being_countered_score(champ, enemy_team)
+            tier_score = self.get_tier_score(champ["id"])
             
             # Combined score (weighted)
-            # Synergy: 40%, Counter: 35%, Avoid being countered: 25%
+            # Tier (meta strength): 15%, Synergy: 35%, Counter: 30%, Avoid being countered: 20%
             total_score = (
-                synergy_score * 0.4 +
-                counter_score * 0.35 -
-                vulnerability_score * 0.25 +
-                champ["role_viability"] * 0.2  # Role fit bonus
+                tier_score * 0.15 +
+                synergy_score * 0.35 +
+                counter_score * 0.30 -
+                vulnerability_score * 0.20 +
+                champ["role_viability"] * 0.15  # Role fit bonus
             )
+            
+            # Get tier info for display
+            tier_info = self.champion_tiers.get(champ["id"], {})
+            tier_name = tier_info.get("tier", "B")
             
             recommendations.append({
                 "champion": champ,
                 "total_score": total_score,
+                "tier_score": tier_score,
+                "tier_name": tier_name,
                 "synergy_score": synergy_score,
                 "counter_score": counter_score,
                 "vulnerability_score": vulnerability_score,

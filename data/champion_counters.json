@@ -1,0 +1,338 @@
+[
+    {
+        "champion": "fiora",
+        "counters": [
+            {
+                "target": "aatrox",
+                "strength": 0.8,
+                "reason": "Fiora's E riposte can block Aatrox's Q sweet spots and W knock-up, nullifying his combo"
+            },
+            {
+                "target": "darius",
+                "strength": 0.75,
+                "reason": "Fiora can parry Darius's R execute and out-duel him with true damage"
+            },
+            {
+                "target": "garen",
+                "strength": 0.7,
+                "reason": "Fiora's vitals proc true damage bypassing Garen's armor and she can riposte his ultimate"
+            }
+        ]
+    },
+    {
+        "champion": "yasuo",
+        "counters": [
+            {
+                "target": "malphite",
+                "strength": 0.9,
+                "reason": "Yasuo's windwall blocks Malphite's Q poke and R can follow-up on Malphite's ultimate for massive AOE damage"
+            },
+            {
+                "target": "braum",
+                "strength": 0.75,
+                "reason": "Yasuo can dash through minions to avoid Braum's Q and his ultimate synergizes with Braum's R knockup"
+            }
+        ]
+    },
+    {
+        "champion": "vayne",
+        "counters": [
+            {
+                "target": "malphite",
+                "strength": 0.85,
+                "reason": "Vayne's true damage from W shreds tanks like Malphite, and her mobility helps dodge his ultimate"
+            },
+            {
+                "target": "mundo",
+                "strength": 0.8,
+                "reason": "Vayne's % max HP true damage counters Mundo's health stacking"
+            },
+            {
+                "target": "garen",
+                "strength": 0.75,
+                "reason": "Silver Bolts proc true damage ignoring Garen's armor build"
+            }
+        ]
+    },
+    {
+        "champion": "zed",
+        "counters": [
+            {
+                "target": "lux",
+                "strength": 0.85,
+                "reason": "Zed can easily dodge Lux's skill shots with his shadows and burst her down"
+            },
+            {
+                "target": "orianna",
+                "strength": 0.7,
+                "reason": "Zed's mobility and assassination potential counters Orianna's immobility"
+            },
+            {
+                "target": "syndra",
+                "strength": 0.75,
+                "reason": "Zed's R allows him to dodge Syndra's ultimate and assassinate her"
+            }
+        ]
+    },
+    {
+        "champion": "morgana",
+        "counters": [
+            {
+                "target": "thresh",
+                "strength": 0.8,
+                "reason": "Morgana's E black shield blocks all CC from Thresh's kit"
+            },
+            {
+                "target": "leona",
+                "strength": 0.85,
+                "reason": "Black shield negates Leona's entire engage combo"
+            },
+            {
+                "target": "blitzcrank",
+                "strength": 0.9,
+                "reason": "Black shield prevents hook displacement and follow-up CC"
+            }
+        ]
+    },
+    {
+        "champion": "master_yi",
+        "counters": [
+            {
+                "target": "kindred",
+                "strength": 0.7,
+                "reason": "Yi's untargetability during Q can dodge Kindred's abilities and he can invade jungle early"
+            },
+            {
+                "target": "karthus",
+                "strength": 0.75,
+                "reason": "Yi's Q dodges Karthus Q and his sustain allows him to survive ultimate"
+            }
+        ]
+    },
+    {
+        "champion": "jax",
+        "counters": [
+            {
+                "target": "irelia",
+                "strength": 0.7,
+                "reason": "Jax's E counters Irelia's auto-attack reliant kit"
+            },
+            {
+                "target": "yasuo",
+                "strength": 0.75,
+                "reason": "Counter Strike blocks Yasuo's auto attacks and Jax out-scales in duels"
+            },
+            {
+                "target": "fiora",
+                "strength": 0.65,
+                "reason": "Jax's E can dodge Fiora's vital procs during teamfights"
+            }
+        ]
+    },
+    {
+        "champion": "malphite",
+        "counters": [
+            {
+                "target": "yasuo",
+                "strength": 0.8,
+                "reason": "Malphite's ultimate provides perfect knock-up for Yasuo's ultimate synergy"
+            },
+            {
+                "target": "irelia",
+                "strength": 0.7,
+                "reason": "Armor stacking reduces Irelia's auto-attack damage significantly"
+            },
+            {
+                "target": "jinx",
+                "strength": 0.75,
+                "reason": "Malphite can engage on immobile Jinx and burst her with full combo"
+            }
+        ]
+    },
+    {
+        "champion": "lee_sin",
+        "counters": [
+            {
+                "target": "katarina",
+                "strength": 0.8,
+                "reason": "Lee Sin's ultimate can kick Katarina out of her ultimate channel"
+            },
+            {
+                "target": "master_yi",
+                "strength": 0.7,
+                "reason": "Lee can displace Yi and peel for carries with ultimate"
+            }
+        ]
+    },
+    {
+        "champion": "lulu",
+        "counters": [
+            {
+                "target": "zed",
+                "strength": 0.85,
+                "reason": "Lulu's polymorph and ultimate completely shut down Zed's assassination attempts"
+            },
+            {
+                "target": "kha_zix",
+                "strength": 0.8,
+                "reason": "Shield and polymorph deny Kha'Zix isolated damage"
+            },
+            {
+                "target": "rengar",
+                "strength": 0.85,
+                "reason": "Ultimate knockup and polymorph counter Rengar's burst combo"
+            }
+        ]
+    },
+    {
+        "champion": "braum",
+        "counters": [
+            {
+                "target": "ezreal",
+                "strength": 0.75,
+                "reason": "Braum's shield blocks all of Ezreal's poke damage"
+            },
+            {
+                "target": "jinx",
+                "strength": 0.7,
+                "reason": "Shield blocks Jinx's ultimate and W, protecting team"
+            }
+        ]
+    },
+    {
+        "champion": "nasus",
+        "counters": [
+            {
+                "target": "darius",
+                "strength": -0.7,
+                "reason": "Darius hard counters Nasus in lane with poke and prevents stacking"
+            },
+            {
+                "target": "teemo",
+                "strength": -0.8,
+                "reason": "Teemo's blind and poke denies Nasus stacks early game"
+            }
+        ],
+        "strong_against": [
+            {
+                "target": "riven",
+                "strength": 0.65,
+                "reason": "Nasus can wither Riven and out-sustain her in extended trades"
+            }
+        ]
+    },
+    {
+        "champion": "corki",
+        "counters": [
+            {
+                "target": "malphite",
+                "strength": 0.75,
+                "reason": "Corki's magic damage from passive bypasses Malphite's armor stacking"
+            }
+        ]
+    },
+    {
+        "champion": "kassadin",
+        "counters": [
+            {
+                "target": "syndra",
+                "strength": 0.7,
+                "reason": "Kassadin's passive reduces magic damage and he can burst mages post-6"
+            },
+            {
+                "target": "katarina",
+                "strength": 0.75,
+                "reason": "Silence interrupt Katarina's ultimate and kassadin out-scales"
+            }
+        ]
+    },
+    {
+        "champion": "garen",
+        "counters": [
+            {
+                "target": "teemo",
+                "strength": -0.75,
+                "reason": "Teemo's blind and kiting completely denies Garen's damage"
+            },
+            {
+                "target": "vayne",
+                "strength": -0.7,
+                "reason": "Vayne's true damage and kiting counter Garen's tankiness"
+            }
+        ]
+    },
+    {
+        "champion": "thresh",
+        "counters": [
+            {
+                "target": "morgana",
+                "strength": -0.8,
+                "reason": "Morgana's black shield completely negates Thresh's hook and CC chain"
+            }
+        ],
+        "strong_against": [
+            {
+                "target": "jinx",
+                "strength": 0.75,
+                "reason": "Hook can easily catch immobile Jinx and set up kills"
+            },
+            {
+                "target": "ashe",
+                "strength": 0.7,
+                "reason": "Ashe has no escape from Thresh hook"
+            }
+        ]
+    },
+    {
+        "champion": "blitzcrank",
+        "counters": [
+            {
+                "target": "morgana",
+                "strength": -0.85,
+                "reason": "Black shield makes hook useless"
+            }
+        ],
+        "strong_against": [
+            {
+                "target": "ezreal",
+                "strength": 0.6,
+                "reason": "Even with blink, one successful hook can win the fight"
+            }
+        ]
+    },
+    {
+        "champion": "darius",
+        "counters": [
+            {
+                "target": "nasus",
+                "strength": 0.8,
+                "reason": "Darius denies Nasus stacks and dominates lane phase"
+            },
+            {
+                "target": "garen",
+                "strength": 0.7,
+                "reason": "Darius out-damages and out-trades Garen in extended fights"
+            }
+        ]
+    },
+    {
+        "champion": "amumu",
+        "counters": [
+            {
+                "target": "yasuo",
+                "strength": 0.75,
+                "reason": "Ultimate provides perfect setup for Yasuo's ultimate"
+            }
+        ]
+    },
+    {
+        "champion": "alistar",
+        "counters": [
+            {
+                "target": "katarina",
+                "strength": 0.8,
+                "reason": "Alistar's knock-up interrupts Katarina's ultimate channel"
+            }
+        ]
+    }
+]

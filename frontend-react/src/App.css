@@ -42,6 +42,15 @@
   --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+/* Global Reset & Height Fix */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -50,9 +59,7 @@ body {
   background: linear-gradient(135deg, #0d1b2a 0%, #050a0f 50%, #1a0f2e 100%);
   color: var(--c-gold-2);
   font-family: var(--font-body);
-  margin: 0;
   overflow: hidden;
-  height: 100vh;
   position: relative;
 }
 
@@ -107,10 +114,11 @@ body::after {
   }
 }
 
+/* App Wrapper */
 .app {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   position: relative;
   z-index: 1;
 }
@@ -170,10 +178,7 @@ body::after {
   color: var(--c-gold-1);
   text-transform: uppercase;
   letter-spacing: 8px;
-  text-shadow:
-    0 0 10px rgba(212, 175, 55, 0.8),
-    0 0 20px rgba(212, 175, 55, 0.4),
-    2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.8), 0 0 20px rgba(212, 175, 55, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.8);
   margin: 0;
   animation: titleEntry 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   position: relative;
@@ -222,12 +227,12 @@ body::after {
 /* Main Layout */
 .main-content {
   flex: 1;
+  /* <-- fills space under header */
   display: grid;
   grid-template-columns: 24% 1fr 24%;
   gap: 8px;
   padding: 12px;
   overflow: hidden;
-  height: calc(100vh - 90px);
   position: relative;
 }
 
@@ -238,9 +243,7 @@ body::after {
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.4),
-    inset 0 0 0 1px rgba(212, 175, 55, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 0 0 1px rgba(212, 175, 55, 0.1);
   position: relative;
   height: 100%;
   backdrop-filter: blur(10px);
@@ -274,9 +277,7 @@ body::after {
 }
 
 .column:hover {
-  box-shadow:
-    0 12px 48px rgba(0, 0, 0, 0.5),
-    inset 0 0 0 1px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(212, 175, 55, 0.2);
   transform: translateY(-2px);
 }
 
@@ -314,19 +315,13 @@ body::after {
 
 .ally-header h2 {
   color: var(--c-ally);
-  text-shadow:
-    0 0 20px rgba(0, 255, 200, 0.6),
-    0 0 40px rgba(0, 255, 200, 0.3),
-    2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 0 20px rgba(0, 255, 200, 0.6), 0 0 40px rgba(0, 255, 200, 0.3), 2px 2px 4px rgba(0, 0, 0, 0.8);
   animation: neonAlly 2s ease-in-out infinite;
 }
 
 .enemy-header h2 {
   color: var(--c-enemy);
-  text-shadow:
-    0 0 20px rgba(255, 51, 102, 0.6),
-    0 0 40px rgba(255, 51, 102, 0.3),
-    2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 0 20px rgba(255, 51, 102, 0.6), 0 0 40px rgba(255, 51, 102, 0.3), 2px 2px 4px rgba(0, 0, 0, 0.8);
   animation: neonEnemy 2s ease-in-out infinite;
 }
 
@@ -354,16 +349,23 @@ body::after {
   }
 }
 
-/* Pick Slots - Enhanced */
+/* Pick Slots */
 .pick-slots {
   padding: 12px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   flex: 1;
+  /* fills column */
   overflow-y: auto;
   overflow-x: hidden;
 }
+
+/* ... Rest of your CSS remains the same ... */
+
+/* Just remove main-content height calc and body 100vh issues */
+
+/* Responsive rules remain untouched */
 
 .pick-slot {
   display: flex;
