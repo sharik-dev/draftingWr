@@ -73,7 +73,7 @@
         "akshan"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Mid / ADC champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Akshan.png"
     },
@@ -194,7 +194,7 @@
         "aurelionSol"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Mid champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/AurelionSol.png"
     },
@@ -228,7 +228,7 @@
         "bard"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Support champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Bard.png"
     },
@@ -265,7 +265,7 @@
         "brand"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Support / Mid champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Brand.png"
     },
@@ -303,7 +303,7 @@
         "caitlyn"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "ADC champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Caitlyn.png"
     },
@@ -324,7 +324,7 @@
         "camille"
       ],
       "damage_type": "AD",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Mobile duelist with true damage and lockdown",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Camille.png"
     },
@@ -342,7 +342,7 @@
         "corki"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Mid / ADC champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Corki.png"
     },
@@ -399,7 +399,7 @@
         "drMundo"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Baron / Jungle champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/DrMundo.png"
     },
@@ -621,7 +621,7 @@
         "graves"
       ],
       "damage_type": "AD",
-      "scaling": "mid",
+      "scaling": "early",
       "jungle_stats": {
         "clear": 10,
         "sustain": 8,
@@ -645,7 +645,7 @@
         "gwen"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Baron / Jungle champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Gwen.png"
     },
@@ -737,7 +737,7 @@
         "jarvanIV"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Jungle champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/JarvanIV.png"
     },
@@ -755,7 +755,7 @@
         "jax"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Baron / Jungle champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Jax.png"
     },
@@ -773,7 +773,7 @@
         "jayce"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Baron / Mid champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Jayce.png"
     },
@@ -829,7 +829,7 @@
         "kaisa"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "ADC champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Kaisa.png"
     },
@@ -847,7 +847,7 @@
         "kalista"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "ADC champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Kalista.png"
     },
@@ -865,7 +865,7 @@
         "karma"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Support / Mid champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Karma.png"
     },
@@ -882,7 +882,7 @@
         "kassadin"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Mid champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Kassadin.png"
     },
@@ -920,7 +920,7 @@
         "kayle"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Baron / Mid champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Kayle.png"
     },
@@ -938,7 +938,7 @@
         "kayn"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Jungle champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Kayn.png"
     },
@@ -992,7 +992,7 @@
         "kindred"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Jungle champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Kindred.png"
     },
@@ -1010,7 +1010,7 @@
         "kogMaw"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "ADC champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/KogMaw.png"
     },
@@ -1054,7 +1054,7 @@
         "leona"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Support champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Leona.png"
     },
@@ -1107,7 +1107,7 @@
         "lucian"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "ADC champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Lucian.png"
     },
@@ -1128,7 +1128,7 @@
         "lulu"
       ],
       "damage_type": "AP",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Utility support with polymorph and buffs",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Lulu.png"
     },
@@ -1268,7 +1268,7 @@
         "missFortune"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "ADC champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/MissFortune.png"
     },
@@ -1323,7 +1323,7 @@
         "nami"
       ],
       "damage_type": "AP",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Versatile support with heal and wave engage",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Nami.png"
     },
@@ -1340,7 +1340,7 @@
         "nasus"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Baron champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Nasus.png"
     },
@@ -1358,7 +1358,7 @@
         "nautilus"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Support / Jungle champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Nautilus.png"
     },
@@ -1376,7 +1376,7 @@
         "nidalee"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Jungle champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Nidalee.png"
     },
@@ -1412,7 +1412,7 @@
         "nocturne"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Jungle champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Nocturne.png"
     },
@@ -1467,7 +1467,7 @@
         "olaf"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Jungle / Baron champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Olaf.png"
     },
@@ -1504,7 +1504,7 @@
         "ornn"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Baron champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Ornn.png"
     },
@@ -1523,7 +1523,7 @@
         "pantheon"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Jungle / Baron champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Pantheon.png"
     },
@@ -1558,7 +1558,7 @@
         "pyke"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Support champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Pyke.png"
     },
@@ -1627,7 +1627,7 @@
         "renekton"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Baron champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Renekton.png"
     },
@@ -1689,7 +1689,7 @@
         "rumble"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Mid / Baron champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Rumble.png"
     },
@@ -1706,7 +1706,7 @@
         "ryze"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Mid champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Ryze.png"
     },
@@ -1742,7 +1742,7 @@
         "senna"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Support / ADC champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Senna.png"
     },
@@ -1760,7 +1760,7 @@
         "seraphine"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Support / Mid champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Seraphine.png"
     },
@@ -1777,7 +1777,7 @@
         "sett"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Baron champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Sett.png"
     },
@@ -1813,7 +1813,7 @@
         "shyvana"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Jungle champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Shyvana.png"
     },
@@ -1847,7 +1847,7 @@
         "sion"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Baron champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Sion.png"
     },
@@ -1865,7 +1865,7 @@
         "sivir"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "ADC champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Sivir.png"
     },
@@ -1883,7 +1883,7 @@
         "smolder"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "ADC champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Smolder.png"
     },
@@ -1923,7 +1923,7 @@
         "soraka"
       ],
       "damage_type": "AP",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Healing support with global ultimate",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Soraka.png"
     },
@@ -1977,7 +1977,7 @@
         "talon"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Jungle / Mid champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Talon.png"
     },
@@ -1995,7 +1995,7 @@
         "teemo"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Baron / Mid champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Teemo.png"
     },
@@ -2033,7 +2033,7 @@
         "tristana"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "ADC champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Tristana.png"
     },
@@ -2087,7 +2087,7 @@
         "twitch"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "ADC / Jungle champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Twitch.png"
     },
@@ -2122,7 +2122,7 @@
         "varus"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "ADC champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Varus.png"
     },
@@ -2160,7 +2160,7 @@
         "veigar"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Mid champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Veigar.png"
     },
@@ -2248,7 +2248,7 @@
         "viktor"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Mid champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Viktor.png"
     },
@@ -2266,7 +2266,7 @@
         "vladimir"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Mid / Baron champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Vladimir.png"
     },
@@ -2285,7 +2285,7 @@
         "volibear"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Jungle / Baron champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Volibear.png"
     },
@@ -2303,7 +2303,7 @@
         "warwick"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Jungle champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Warwick.png"
     },
@@ -2339,7 +2339,7 @@
         "xayah"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "ADC champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Xayah.png"
     },
@@ -2357,7 +2357,7 @@
         "xinZhao"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Jungle champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/XinZhao.png"
     },
@@ -2401,7 +2401,7 @@
         "yone"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Mid champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Yone.png"
     },
@@ -2418,7 +2418,7 @@
         "yuumi"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Support champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Yuumi.png"
     },
@@ -2439,7 +2439,7 @@
         "zed"
       ],
       "damage_type": "AD",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Shadow assassin with high outplay potential",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Zed.png"
     },
@@ -2457,7 +2457,7 @@
         "zeri"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "ADC champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Zeri.png"
     },
@@ -2492,7 +2492,7 @@
         "zilean"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "late",
       "description": "Support / Mid champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Zilean.png"
     },
@@ -2509,7 +2509,7 @@
         "zoe"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Mid champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Zoe.png"
     },
@@ -2527,7 +2527,7 @@
         "zyra"
       ],
       "damage_type": "Adaptive",
-      "scaling": "mid",
+      "scaling": "early",
       "description": "Support / Mid champion",
       "image_url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/img/champion/Zyra.png"
     }
