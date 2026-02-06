@@ -10,7 +10,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "aatrox"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -29,7 +30,8 @@
         "charm",
         "poke",
         "kite",
-        "assassin"
+        "assassin",
+        "ahri"
       ],
       "damage_type": "AP",
       "scaling": "mid",
@@ -49,7 +51,8 @@
         "mobility",
         "stealth",
         "melee",
-        "outplay"
+        "outplay",
+        "akali"
       ],
       "damage_type": "AP",
       "scaling": "mid",
@@ -66,7 +69,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "akshan"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -86,7 +90,8 @@
         "knockup",
         "cc",
         "peel",
-        "dive"
+        "dive",
+        "alistar"
       ],
       "damage_type": "AP",
       "scaling": "early",
@@ -103,7 +108,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "ambessa"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -122,7 +128,8 @@
         "engage",
         "AoE",
         "cc",
-        "teamfight"
+        "teamfight",
+        "amumu"
       ],
       "damage_type": "AP",
       "scaling": "mid",
@@ -147,7 +154,8 @@
         "AoE",
         "cc",
         "summon",
-        "easy"
+        "easy",
+        "annie"
       ],
       "damage_type": "AP",
       "scaling": "mid",
@@ -165,7 +173,8 @@
         "ranged",
         "physical",
         "dps",
-        "carry"
+        "carry",
+        "ashe"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -181,7 +190,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "aurelionSol"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -197,7 +207,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "aurora"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -213,7 +224,8 @@
       "kit_tags": [
         "cc",
         "protect",
-        "utility"
+        "utility",
+        "bard"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -231,7 +243,8 @@
         "engage",
         "cc",
         "displacement",
-        "tank"
+        "tank",
+        "blitzcrank"
       ],
       "damage_type": "AP",
       "scaling": "early",
@@ -248,7 +261,8 @@
       "kit_tags": [
         "cc",
         "protect",
-        "utility"
+        "utility",
+        "brand"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -267,7 +281,8 @@
         "shield",
         "cc",
         "engage",
-        "wall"
+        "wall",
+        "braum"
       ],
       "damage_type": "AP",
       "scaling": "early",
@@ -284,7 +299,8 @@
         "ranged",
         "physical",
         "dps",
-        "carry"
+        "carry",
+        "caitlyn"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -304,7 +320,8 @@
         "true_damage",
         "engage",
         "melee",
-        "scaling"
+        "scaling",
+        "camille"
       ],
       "damage_type": "AD",
       "scaling": "mid",
@@ -321,7 +338,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "corki"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -341,7 +359,8 @@
         "sustain",
         "execute",
         "reset",
-        "early_game"
+        "early_game",
+        "darius"
       ],
       "damage_type": "AD",
       "scaling": "early",
@@ -358,7 +377,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "diana"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -375,7 +395,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "drMundo"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -393,7 +414,8 @@
         "early_game",
         "ranged",
         "snowball",
-        "execute"
+        "execute",
+        "draven"
       ],
       "damage_type": "AD",
       "scaling": "early",
@@ -410,7 +432,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "ekko"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -427,7 +450,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "evelynn"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -447,7 +471,8 @@
         "ranged",
         "kite",
         "burst",
-        "safe"
+        "safe",
+        "ezreal"
       ],
       "damage_type": "AD",
       "scaling": "mid",
@@ -464,7 +489,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "fiddlesticks"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -484,7 +510,8 @@
         "mobility",
         "sustain",
         "true_damage",
-        "scaling"
+        "scaling",
+        "fiora"
       ],
       "damage_type": "AD",
       "scaling": "late",
@@ -500,7 +527,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "fizz"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -517,7 +545,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "galio"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -533,7 +562,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "garen"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -549,7 +579,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "gnar"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -567,7 +598,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "gragas"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -585,7 +617,8 @@
         "ranged",
         "mobility",
         "tank",
-        "bully"
+        "bully",
+        "graves"
       ],
       "damage_type": "AD",
       "scaling": "mid",
@@ -608,7 +641,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "gwen"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -625,7 +659,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "hecarim"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -642,7 +677,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "heimerdinger"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -659,7 +695,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "irelia"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -678,7 +715,8 @@
         "shield",
         "cc",
         "utility",
-        "kite"
+        "kite",
+        "janna"
       ],
       "damage_type": "AP",
       "scaling": "mid",
@@ -695,7 +733,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "jarvanIV"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -712,7 +751,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "jax"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -729,7 +769,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "jayce"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -746,7 +787,8 @@
         "ranged",
         "physical",
         "dps",
-        "carry"
+        "carry",
+        "jhin"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -765,7 +807,8 @@
         "AoE",
         "reset",
         "scaling",
-        "burst"
+        "burst",
+        "jinx"
       ],
       "damage_type": "AD",
       "scaling": "late",
@@ -782,7 +825,8 @@
         "ranged",
         "physical",
         "dps",
-        "carry"
+        "carry",
+        "kaisa"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -799,7 +843,8 @@
         "ranged",
         "physical",
         "dps",
-        "carry"
+        "carry",
+        "kalista"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -816,7 +861,8 @@
       "kit_tags": [
         "cc",
         "protect",
-        "utility"
+        "utility",
+        "karma"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -832,7 +878,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "kassadin"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -851,7 +898,8 @@
         "AoE",
         "reset",
         "mobility",
-        "melee"
+        "melee",
+        "katarina"
       ],
       "damage_type": "AP",
       "scaling": "mid",
@@ -868,7 +916,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "kayle"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -885,7 +934,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "kayn"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -902,7 +952,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "kennen"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -919,7 +970,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "khazix"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -936,7 +988,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "kindred"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -953,7 +1006,8 @@
         "ranged",
         "physical",
         "dps",
-        "carry"
+        "carry",
+        "kogMaw"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -973,7 +1027,8 @@
         "burst",
         "early_game",
         "melee",
-        "displacement"
+        "displacement",
+        "leeSin"
       ],
       "damage_type": "AD",
       "scaling": "early",
@@ -995,7 +1050,8 @@
       "kit_tags": [
         "cc",
         "protect",
-        "utility"
+        "utility",
+        "leona"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1012,7 +1068,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "lillia"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1028,7 +1085,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "lissandra"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1045,7 +1103,8 @@
         "ranged",
         "physical",
         "dps",
-        "carry"
+        "carry",
+        "lucian"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1065,7 +1124,8 @@
         "shield",
         "cc",
         "polymorph",
-        "buff"
+        "buff",
+        "lulu"
       ],
       "damage_type": "AP",
       "scaling": "mid",
@@ -1085,7 +1145,8 @@
         "cc",
         "ranged",
         "shield",
-        "AoE"
+        "AoE",
+        "lux"
       ],
       "damage_type": "AP",
       "scaling": "mid",
@@ -1106,7 +1167,8 @@
         "AoE",
         "knockup",
         "armor_scaling",
-        "teamfight"
+        "teamfight",
+        "malphite"
       ],
       "damage_type": "AP",
       "scaling": "mid",
@@ -1124,7 +1186,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "maokai"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1143,7 +1206,8 @@
         "reset",
         "mobility",
         "scaling",
-        "dps"
+        "dps",
+        "masterYi"
       ],
       "damage_type": "AD",
       "scaling": "late",
@@ -1165,7 +1229,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "mel"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1181,7 +1246,8 @@
       "kit_tags": [
         "cc",
         "protect",
-        "utility"
+        "utility",
+        "milio"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1198,7 +1264,8 @@
         "ranged",
         "physical",
         "dps",
-        "carry"
+        "carry",
+        "missFortune"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1214,7 +1281,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "mordekaiser"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1231,7 +1299,8 @@
       "kit_tags": [
         "cc",
         "protect",
-        "utility"
+        "utility",
+        "morgana"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1250,7 +1319,8 @@
         "poke",
         "heal",
         "utility",
-        "engage"
+        "engage",
+        "nami"
       ],
       "damage_type": "AP",
       "scaling": "mid",
@@ -1266,7 +1336,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "nasus"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1283,7 +1354,8 @@
       "kit_tags": [
         "cc",
         "protect",
-        "utility"
+        "utility",
+        "nautilus"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1300,7 +1372,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "nidalee"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1317,7 +1390,8 @@
         "ranged",
         "physical",
         "dps",
-        "carry"
+        "carry",
+        "nilah"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1334,7 +1408,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "nocturne"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1351,7 +1426,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "norra"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1368,7 +1444,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "nunu"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1386,7 +1463,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "olaf"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1405,7 +1483,8 @@
         "burst",
         "utility",
         "shield",
-        "teamfight"
+        "teamfight",
+        "orianna"
       ],
       "damage_type": "AP",
       "scaling": "mid",
@@ -1421,7 +1500,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "ornn"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1439,7 +1519,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "pantheon"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1456,7 +1537,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "poppy"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1472,7 +1554,8 @@
       "kit_tags": [
         "cc",
         "protect",
-        "utility"
+        "utility",
+        "pyke"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1488,7 +1571,8 @@
       "kit_tags": [
         "cc",
         "protect",
-        "utility"
+        "utility",
+        "rakan"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1505,7 +1589,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "rammus"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1521,7 +1606,8 @@
       "kit_tags": [
         "cc",
         "protect",
-        "utility"
+        "utility",
+        "rell"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1537,7 +1623,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "renekton"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1557,7 +1644,8 @@
         "stealth",
         "melee",
         "mobility",
-        "bush"
+        "bush",
+        "rengar"
       ],
       "damage_type": "AD",
       "scaling": "mid",
@@ -1579,7 +1667,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "riven"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1596,7 +1685,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "rumble"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1612,7 +1702,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "ryze"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1629,7 +1720,8 @@
         "ranged",
         "physical",
         "dps",
-        "carry"
+        "carry",
+        "samira"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1646,7 +1738,8 @@
       "kit_tags": [
         "cc",
         "protect",
-        "utility"
+        "utility",
+        "senna"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1663,7 +1756,8 @@
       "kit_tags": [
         "cc",
         "protect",
-        "utility"
+        "utility",
+        "seraphine"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1679,7 +1773,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "sett"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1696,7 +1791,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "shen"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1713,7 +1809,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "shyvana"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1729,7 +1826,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "singed"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1745,7 +1843,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "sion"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1762,7 +1861,8 @@
         "ranged",
         "physical",
         "dps",
-        "carry"
+        "carry",
+        "sivir"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1779,7 +1879,8 @@
         "ranged",
         "physical",
         "dps",
-        "carry"
+        "carry",
+        "smolder"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1798,7 +1899,8 @@
         "utility",
         "AoE",
         "cc",
-        "heal"
+        "heal",
+        "sona"
       ],
       "damage_type": "AP",
       "scaling": "late",
@@ -1817,7 +1919,8 @@
         "poke",
         "ranged",
         "peel",
-        "utility"
+        "utility",
+        "soraka"
       ],
       "damage_type": "AP",
       "scaling": "mid",
@@ -1834,7 +1937,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "swain"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1850,7 +1954,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "syndra"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1868,7 +1973,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "talon"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1885,7 +1991,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "teemo"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1904,7 +2011,8 @@
         "engage",
         "cc",
         "utility",
-        "lantern"
+        "lantern",
+        "thresh"
       ],
       "damage_type": "mixed",
       "scaling": "early",
@@ -1921,7 +2029,8 @@
         "ranged",
         "physical",
         "dps",
-        "carry"
+        "carry",
+        "tristana"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1938,7 +2047,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "tryndamere"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1954,7 +2064,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "twistedFate"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1972,7 +2083,8 @@
         "ranged",
         "physical",
         "dps",
-        "carry"
+        "carry",
+        "twitch"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -1988,7 +2100,8 @@
       "kit_tags": [
         "melee",
         "solo",
-        "bruiser"
+        "bruiser",
+        "urgot"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2005,7 +2118,8 @@
         "ranged",
         "physical",
         "dps",
-        "carry"
+        "carry",
+        "varus"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2025,7 +2139,8 @@
         "true_damage",
         "mobility",
         "scaling",
-        "duelist"
+        "duelist",
+        "vayne"
       ],
       "damage_type": "AD",
       "scaling": "late",
@@ -2041,7 +2156,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "veigar"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2058,7 +2174,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "velkoz"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2074,7 +2191,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "vex"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2091,7 +2209,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "vi"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2108,7 +2227,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "viego"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2124,7 +2244,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "viktor"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2141,7 +2262,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "vladimir"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2159,7 +2281,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "volibear"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2176,7 +2299,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "warwick"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2193,7 +2317,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "monkeyKing"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2210,7 +2335,8 @@
         "ranged",
         "physical",
         "dps",
-        "carry"
+        "carry",
+        "xayah"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2227,7 +2353,8 @@
         "farm",
         "mobility",
         "gank",
-        "jungle"
+        "jungle",
+        "xinZhao"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2248,7 +2375,8 @@
         "melee",
         "windwall",
         "knockup",
-        "scaling"
+        "scaling",
+        "yasuo"
       ],
       "damage_type": "AD",
       "scaling": "late",
@@ -2269,7 +2397,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "yone"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2285,7 +2414,8 @@
       "kit_tags": [
         "cc",
         "protect",
-        "utility"
+        "utility",
+        "yuumi"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2305,7 +2435,8 @@
         "mobility",
         "melee",
         "outplay",
-        "shadow"
+        "shadow",
+        "zed"
       ],
       "damage_type": "AD",
       "scaling": "mid",
@@ -2322,7 +2453,8 @@
         "ranged",
         "physical",
         "dps",
-        "carry"
+        "carry",
+        "zeri"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2338,7 +2470,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "ziggs"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2355,7 +2488,8 @@
       "kit_tags": [
         "cc",
         "protect",
-        "utility"
+        "utility",
+        "zilean"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2371,7 +2505,8 @@
       "kit_tags": [
         "mage",
         "roam",
-        "burst"
+        "burst",
+        "zoe"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",
@@ -2388,7 +2523,8 @@
       "kit_tags": [
         "cc",
         "protect",
-        "utility"
+        "utility",
+        "zyra"
       ],
       "damage_type": "Adaptive",
       "scaling": "mid",

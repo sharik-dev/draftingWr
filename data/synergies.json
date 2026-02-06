@@ -1,6 +1,186 @@
 {
     "synergies": [
         {
+            "name": "Les Amants (Xayah + Rakan)",
+            "tags": [
+                "xayah",
+                "rakan"
+            ],
+            "score": 1.0,
+            "explanation": "Synergie unique offrant un rappel synchronisé, une portée accrue sur le E de Rakan et des dégâts bonus sur le W de Xayah."
+        },
+        {
+            "name": "Coup Double Passif (Lucian + Braum)",
+            "tags": [
+                "lucian",
+                "braum"
+            ],
+            "score": 0.98,
+            "explanation": "Le passif double tir de Lucian applique instantanément les charges de l'étourdissement de Braum pour un CC ultra-rapide."
+        },
+        {
+            "name": "Knockup Reset (Samira + Nautilus)",
+            "tags": [
+                "samira",
+                "nautilus"
+            ],
+            "score": 0.95,
+            "explanation": "Nautilus possède le plus de knockups pour prolonger le passif de Samira et garantir son Rang S rapidement."
+        },
+        {
+            "name": "Tourelle Mobile (Kog'Maw + Lulu)",
+            "tags": [
+                "kogMaw",
+                "lulu"
+            ],
+            "score": 0.95,
+            "explanation": "Lulu fournit la vitesse d'attaque et la protection (Pix) nécessaires pour que Kog'Maw détruise tout en fin de partie."
+        },
+        {
+            "name": "Cage vers Piège (Caitlyn + Lux)",
+            "tags": [
+                "caitlyn",
+                "lux"
+            ],
+            "score": 0.9,
+            "explanation": "Une cage touchée par Lux garantit l'activation d'un piège de Caitlyn, suivi d'un laser et d'un tir à la tête pour un one-shot."
+        },
+        {
+            "name": "Airborne Combo (Yasuo + Alistar)",
+            "tags": [
+                "yasuo",
+                "alistar"
+            ],
+            "score": 0.92,
+            "explanation": "Le combo W-Q d'Alistar offre la projection la plus fiable pour déclencher l'ultime de Yasuo en botlane."
+        },
+        {
+            "name": "Curse of the Bullet Time (Miss Fortune + Amumu)",
+            "tags": [
+                "missFortune",
+                "amumu"
+            ],
+            "score": 0.92,
+            "explanation": "L'ultime d'Amumu immobilise toute l'équipe adverse, garantissant que l'ultime de Miss Fortune touche sa cible complète."
+        },
+        {
+            "name": "Cash Out Express (Draven + Thresh)",
+            "tags": [
+                "draven",
+                "thresh"
+            ],
+            "score": 0.9,
+            "explanation": "Le kit de Thresh (Hook/Flay/Lanterne) offre à Draven la sécurité et les opportunités de kills nécessaires pour encaisser son passif."
+        },
+        {
+            "name": "Plasma Stacking (Kai'Sa + Leona)",
+            "tags": [
+                "kaisa",
+                "leona"
+            ],
+            "score": 0.85,
+            "explanation": "Chaque contrôle de foule de Leona applique une charge de plasma sur la cible, permettant à Kai'Sa d'exploser les tanks."
+        },
+        {
+            "name": "Batterie Haute Vitesse (Zeri + Yuumi)",
+            "tags": [
+                "zeri",
+                "yuumi"
+            ],
+            "score": 0.88,
+            "explanation": "Yuumi reste attachée à Zeri malgré sa mobilité extrême, lui fournissant des stats adaptatives et une vitesse constante."
+        },
+        {
+            "name": "Livraison à Domicile (Kalista + Galio)",
+            "tags": [
+                "kalista",
+                "galio"
+            ],
+            "score": 0.82,
+            "explanation": "L'ultime de Kalista lance Galio au cœur du combat, lui permettant de placer une provocation de zone instantanée."
+        },
+        {
+            "name": "Sustain Amplifié (Nilah + Soraka)",
+            "tags": [
+                "nilah",
+                "soraka"
+            ],
+            "score": 0.87,
+            "explanation": "Le passif de Nilah amplifie les soins reçus, rendant les soins de Soraka capables de la maintenir en vie contre tout burst."
+        },
+        {
+            "name": "Perma-Slow Freljord (Ashe + Braum)",
+            "tags": [
+                "ashe",
+                "braum"
+            ],
+            "score": 0.8,
+            "explanation": "Les ralentissements d'Ashe facilitent l'approche de Braum pour appliquer son passif et protéger l'ADC."
+        },
+        {
+            "name": "Poke & Siege (Ezreal + Karma)",
+            "tags": [
+                "ezreal",
+                "karma"
+            ],
+            "score": 0.8,
+            "explanation": "Duo intouchable capable de harceler sous tour avec une double menace de poke (Q d'Ezreal + R-Q de Karma)."
+        },
+        {
+            "name": "Root longue distance (Jhin + Zyra)",
+            "tags": [
+                "jhin",
+                "zyra"
+            ],
+            "score": 0.83,
+            "explanation": "Les plantes de Zyra activent la marque de Jhin, lui permettant de root l'ennemi de très loin pour un enchaînement."
+        },
+        {
+            "name": "Reset City (Jinx + Thresh)",
+            "tags": [
+                "jinx",
+                "thresh"
+            ],
+            "score": 0.85,
+            "explanation": "Thresh sécurise un pick avec son hook, permettant à Jinx d'activer 'Get Excited!' et de nettoyer le reste du combat."
+        },
+        {
+            "name": "Double Invisibilité (Twitch + Yuumi)",
+            "tags": [
+                "twitch",
+                "yuumi"
+            ],
+            "score": 0.8,
+            "explanation": "Yuumi devient invisible avec Twitch, permettant des assassinats surprises où le chat ult dès la sortie de furtivité."
+        },
+        {
+            "name": "Zone de Danger (Varus + Mel)",
+            "tags": [
+                "varus",
+                "mel"
+            ],
+            "score": 0.78,
+            "explanation": "L'ultime de Varus immobilise les cibles, permettant à Mel de placer ses sorts de zone dévastateurs sans qu'ils puissent esquiver."
+        },
+        {
+            "name": "Speed Boost Engage (Sivir + Karma)",
+            "tags": [
+                "sivir",
+                "karma"
+            ],
+            "score": 0.75,
+            "explanation": "Double accélération (R de Sivir + E de Karma) permettant à toute l'équipe de forcer un engagement impossible à fuir."
+        },
+        {
+            "name": "Le Mur Infranchissable (Smolder + Milio)",
+            "tags": [
+                "smolder",
+                "milio"
+            ],
+            "score": 0.85,
+            "explanation": "Milio augmente la portée de Smolder pour l'aider à stacker son passif en sécurité et disengage si l'ennemi approche."
+        },
+        {
             "name": "Engage + AoE Damage",
             "tags": [
                 "engage",
@@ -37,24 +217,6 @@
             "explanation": "Hooks create picks for burst damage dealers to delete targets"
         },
         {
-            "name": "Shield + Poke",
-            "tags": [
-                "shield",
-                "poke"
-            ],
-            "score": 0.7,
-            "explanation": "Shields enable safe poke patterns in lane and teamfights"
-        },
-        {
-            "name": "Sustain + Poke",
-            "tags": [
-                "sustain",
-                "poke"
-            ],
-            "score": 0.75,
-            "explanation": "Sustain allows poke compositions to survive and win wars of attrition"
-        },
-        {
             "name": "Tank + Dive",
             "tags": [
                 "tank",
@@ -82,6 +244,15 @@
             "explanation": "AoE creates multi-kills for reset champions to snowball fights"
         },
         {
+            "name": "Shield + Poke",
+            "tags": [
+                "shield",
+                "poke"
+            ],
+            "score": 0.7,
+            "explanation": "Shields enable safe poke patterns in lane and teamfights"
+        },
+        {
             "name": "Mobility + Engage",
             "tags": [
                 "mobility",
@@ -100,24 +271,6 @@
             "explanation": "Thresh lantern enables safe engage/disengage for team"
         },
         {
-            "name": "Buff + Hypercarry",
-            "tags": [
-                "buff",
-                "hypercarry"
-            ],
-            "score": 0.85,
-            "explanation": "Buffs multiply hypercarry effectiveness"
-        },
-        {
-            "name": "Disengage + Poke",
-            "tags": [
-                "disengage",
-                "poke"
-            ],
-            "score": 0.8,
-            "explanation": "Disengage protects poke compositions from all-ins"
-        },
-        {
             "name": "Early Gank + Scaling",
             "tags": [
                 "early_game",
@@ -125,60 +278,6 @@
             ],
             "score": 0.75,
             "explanation": "Early pressure buys time for scalers to come online"
-        },
-        {
-            "name": "True Damage + Tank Shred",
-            "tags": [
-                "true_damage",
-                "tank"
-            ],
-            "score": 0.7,
-            "explanation": "True damage helps team deal with enemy tanks"
-        },
-        {
-            "name": "AoE + Teamfight",
-            "tags": [
-                "AoE",
-                "teamfight"
-            ],
-            "score": 0.8,
-            "explanation": "Multiple AoE sources dominate teamfights"
-        },
-        {
-            "name": "Stealth + Burst",
-            "tags": [
-                "stealth",
-                "burst"
-            ],
-            "score": 0.75,
-            "explanation": "Stealth enables clean burst setups"
-        },
-        {
-            "name": "Utility + Utility",
-            "tags": [
-                "utility",
-                "utility"
-            ],
-            "score": 0.7,
-            "explanation": "High utility teams control map and teamfights"
-        },
-        {
-            "name": "Kite + Peel",
-            "tags": [
-                "kite",
-                "peel"
-            ],
-            "score": 0.8,
-            "explanation": "Kite tools combined with peel make backline untouchable"
-        },
-        {
-            "name": "Assassin + Split Push",
-            "tags": [
-                "assassin",
-                "duelist"
-            ],
-            "score": 0.65,
-            "explanation": "Assassins create map pressure with split pushers"
         }
     ]
 }

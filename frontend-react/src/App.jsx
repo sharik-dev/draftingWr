@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import axios from 'axios';
 import './App.css';
 
@@ -73,11 +74,17 @@ function App() {
         top_n: 50 // Get many to scroll
       });
 
-      // Merge with champion data for images
-      const enhancedRecs = response.data.recommendations.map(rec => ({
-        ...rec,
-        champion: champions.find(c => c.id === rec.champion.id) || rec.champion
-      }));
+      // Merge champion data - keep backend data but add local image if needed
+      const enhancedRecs = response.data.recommendations.map(rec => {
+        const localChamp = champions.find(c => c.id === rec.champion.id);
+        return {
+          ...rec,
+          champion: {
+            ...rec.champion, // Keep backend data (includes role_viability!)
+            image_url: localChamp?.image_url || rec.champion.image_url // Just add image
+          }
+        };
+      });
 
       setRecommendations(enhancedRecs);
     } catch (error) {
@@ -145,26 +152,50 @@ function App() {
     const validPicks = picks.filter(p => p);
     if (validPicks.length === 0) return 0;
 
-    // Average role viability
-    const avgViability = validPicks.reduce((sum, pick) => {
-      return sum + (pick.role_viability || 0.5);
-    }, 0) / validPicks.length;
+    // Tier score for contribution to TOTAL team strength (max 1.0 for 5 champs)
+    // S+ contributes 0.20 (20%), D contributes 0.06 (6%)
+    const tierScores = {
+      'S+': 1.0,
+      'S': 0.9,
+      'A': 0.75,
+      'B': 0.60,
+      'C': 0.40,
+      'D': 0.20
+    };
 
-    // Bonus for team completeness (more picks = better)
-    const completenessBonus = (validPicks.length / 5) * 0.2;
+    // Calculate total score (cumulative)
+    // Max score possible is 5.0 (5 x S+)
+    const totalScore = validPicks.reduce((sum, pick) => {
+      const tier = pick.tier || 'B';
+      return sum + (tierScores[tier] || 0.60);
+    }, 0);
 
-    return Math.min(avgViability + completenessBonus, 1.0);
+    // Normalize to 0-1 range (divide by 5 slots)
+    // A single S+ champion gives 0.20 (20% strength)
+    // A full team of B champions gives 0.60 (60% strength)
+    return Math.min(totalScore / 5, 1.0);
   };
 
   const teamStrength = calculateTeamStrength(teamPicks);
   const enemyStrength = calculateTeamStrength(enemyPicks);
 
-  if (loading) return <div className="app-loading">Loading Drafting Tool...</div>;
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
+  if (loading) return <div className="app-loading">{t('app.loading')}</div>;
 
   return (
     <div className="app">
-      <header className="header">
-        <h1>DraftGap Wild Rift</h1>
+      <header className="header header-centered">
+        <h1>{t('app.title')}</h1>
+
+        <div className="lang-switcher">
+          <button onClick={() => i18n.changeLanguage('fr')}>🇫🇷</button>
+          <button onClick={() => i18n.changeLanguage('en')}>🇬🇧</button>
+        </div>
       </header>
 
       <div className="main-content">
@@ -207,7 +238,7 @@ function App() {
                 letterSpacing: '2px',
                 textShadow: '0 0 10px rgba(0, 255, 200, 0.5)'
               }}>
-                ALLY STRENGTH
+                FORCE ALLIÉE
               </div>
               <div style={{
                 display: 'flex',
@@ -269,7 +300,7 @@ function App() {
                 letterSpacing: '2px',
                 textShadow: '0 0 10px rgba(255, 51, 102, 0.5)'
               }}>
-                ENEMY STRENGTH
+                FORCE ENNEMIE
               </div>
               <div style={{
                 display: 'flex',
@@ -310,7 +341,7 @@ function App() {
             <input
               type="text"
               className="search-input"
-              placeholder="Search champion..."
+              placeholder="Rechercher un champion..."
               value={filters.search}
               onChange={(e) => setFilters({ ...filters, search: e.target.value })}
             />
@@ -365,7 +396,7 @@ function App() {
                   animation: 'pulse 2s ease-in-out infinite'
                 }} />
                 <span style={{ color: 'var(--c-gold-1)', fontWeight: '700' }}>
-                  Selecting for {activeSlot.side === 'team' ? 'ALLY' : 'ENEMY'} - {SLOT_ROLES[activeSlot.index].toUpperCase()}
+                  Sélection pour {activeSlot.side === 'team' ? 'ALLIÉ' : 'ENNEMI'} - {SLOT_ROLES[activeSlot.index].toUpperCase()}
                 </span>
               </div>
               {activeSlot.side === 'enemy' && (
@@ -375,17 +406,13 @@ function App() {
                   fontStyle: 'italic',
                   paddingLeft: '20px'
                 }}>
-                  Showing champions that synergize with enemy team and counter your allies
+                  Affiche les champions qui synergisent avec l'équipe ennemie et contrent vos alliés
                 </div>
               )}
             </div>
           )}
 
-          <div className="table-header">
-            <div>Role</div>
-            <div>Champion</div>
-            <div style={{ textAlign: 'right' }}>Score</div>
-          </div>
+          {/* Table header removed - using card-based design */}
 
           <div className="rec-list">
             <ChampionTable

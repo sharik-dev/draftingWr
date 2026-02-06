@@ -22,6 +22,7 @@ class DraftEngine:
         self.counters = self._load_json("counters.json")["counters"]
         self.champion_counters = self._load_json("champion_counters.json")  # Specific champion matchups
         self.tier_list = self._load_json("tier_list.json")  # Meta tier ratings
+        self.champion_meta = self._load_json("champion_meta.json").get("champion_meta", {})  # Early/late, flex roles
         
         # Create lookup dictionaries for faster access
         self.champion_map = {c["id"]: c for c in self.champions}
@@ -32,6 +33,12 @@ class DraftEngine:
         # Extract tier scoring and champion tiers
         self.tier_scoring = self.tier_list.get("tier_scoring", {})
         self.champion_tiers = self.tier_list.get("champion_tiers", {})
+        
+        # Enrich champions with tier data for easy frontend access
+        for champ in self.champions:
+            champ_id = champ["id"]
+            tier_info = self.champion_tiers.get(champ_id, {})
+            champ["tier"] = tier_info.get("tier", "B")
         
     def _load_json(self, filename: str) -> dict:
         """Load a JSON file from the data directory."""
@@ -78,6 +85,70 @@ class DraftEngine:
             return self.tier_scoring.get(tier, 0.5)
         return 0.5  # Default to middle tier if not found
     
+    def analyze_team_composition(self, team: List[str]) -> Dict:
+        """
+        Analyze team composition for balance metrics.
+        
+        Returns dict with:
+        - early_power: Average early game strength
+        - late_power: Average late game strength
+        - balance_score: How balanced the comp is
+        - power_curve: 'early', 'mid', or 'late' focused
+        """
+        if not team:
+            return {
+                "early_power": 0.5,
+                "late_power": 0.5,
+                "balance_score": 1.0,
+                "power_curve": "mid"
+            }
+        
+        early_scores = []
+        late_scores = []
+        
+        for champ_id in team:
+            meta = self.champion_meta.get(champ_id, {})
+            early_scores.append(meta.get("early_impact", 0.5))
+            late_scores.append(meta.get("late_scaling", 0.5))
+        
+        avg_early = sum(early_scores) / len(early_scores)
+        avg_late = sum(late_scores) / len(late_scores)
+        
+        # Balance score: penalize extreme one-sidedness
+        balance = 1.0 - abs(avg_early - avg_late)
+        
+        # Determine power curve
+        if avg_early > avg_late + 0.2:
+            curve = "early"
+        elif avg_late > avg_early + 0.2:
+            curve = "late"
+        else:
+            curve = "mid"
+        
+        return {
+            "early_power": avg_early,
+            "late_power": avg_late,
+            "balance_score": balance,
+            "power_curve": curve
+        }
+    
+    def calculate_flex_score(self, champion_id: str, role: str) -> float:
+        """Calculate flexibility bonus for champions that can fill multiple roles."""
+        meta = self.champion_meta.get(champion_id, {})
+        flex_roles = meta.get("flex_roles", [role])
+        
+        # More flex roles = higher score
+        flex_count = len(flex_roles)
+        
+        if flex_count >= 4:
+            return 0.3  # Super flex (Pantheon, Gragas)
+        elif flex_count == 3:
+            return 0.2  # High flex
+        elif flex_count == 2:
+            return 0.1  # Moderate flex
+        else:
+            return 0.0  # No flex
+    
     def calculate_synergy_score(self, champion: Dict, team: List[str]) -> Tuple[float, List[str]]:
         """
         Calculate synergy score between a champion and existing team.
@@ -91,6 +162,7 @@ class DraftEngine:
         """
         total_score = 0.0
         explanations = []
+        synergy_counts = {}  # Track how many times each synergy type appears
         
         champ_tags = set(champion.get("kit_tags", []))
         
@@ -108,6 +180,7 @@ class DraftEngine:
             # Check all synergy rules
             for synergy in self.synergies:
                 syn_tags = set(synergy["tags"])
+                synergy_name = synergy["name"]
                 
                 # Check if tags match between champion and teammate
                 if len(syn_tags) == 2:
@@ -115,9 +188,27 @@ class DraftEngine:
                     # Check both directions of synergy
                     if (tags_list[0] in champ_tags and tags_list[1] in teammate_tags) or \
                        (tags_list[1] in champ_tags and tags_list[0] in teammate_tags):
-                        total_score += synergy["score"]
+                        
+                        # Apply diminishing returns for repeated synergies
+                        synergy_counts[synergy_name] = synergy_counts.get(synergy_name, 0) + 1
+                        count = synergy_counts[synergy_name]
+                        
+                        # Diminishing returns: 100%, 75%, 50%, 33% for 1st, 2nd, 3rd, 4th+ occurrences
+                        if count == 1:
+                            multiplier = 1.0
+                        elif count == 2:
+                            multiplier = 0.75
+                        elif count == 3:
+                            multiplier = 0.5
+                        else:
+                            multiplier = 0.33
+                        
+                        score_contribution = synergy["score"] * multiplier
+                        total_score += score_contribution
+                        
                         explanations.append(
                             f"✓ {synergy['name']} with {teammate['name']}: {synergy['explanation']}"
+                            + (f" (x{multiplier:.0%})" if multiplier < 1.0 else "")
                         )
         
         # Normalize by team size to avoid favoring larger teams
@@ -302,28 +393,95 @@ class DraftEngine:
         all_picked = set(team + enemy_team + banned_champions)
         viable = [c for c in viable if c["id"] not in all_picked]
         
+        # Analyze current team composition
+        team_analysis = self.analyze_team_composition(team)
+        team_size = len(team)
+        is_jungle = role == "jungle"
+        
         # Calculate scores for each champion
         recommendations = []
         
         for champ in viable:
+            champ_id = champ["id"]
+            champ_meta = self.champion_meta.get(champ_id, {})
+            
             # Calculate different score components
             synergy_score, synergy_exp = self.calculate_synergy_score(champ, team)
             counter_score, counter_exp = self.calculate_counter_score(champ, enemy_team)
             vulnerability_score, vulnerability_exp = self.calculate_being_countered_score(champ, enemy_team)
-            tier_score = self.get_tier_score(champ["id"])
+            tier_score = self.get_tier_score(champ_id)
+            flex_score = self.calculate_flex_score(champ_id, role)
             
-            # Combined score (weighted)
-            # Tier (meta strength): 15%, Synergy: 35%, Counter: 30%, Avoid being countered: 20%
+            # Early/Late game fit with team
+            early_impact = champ_meta.get("early_impact", 0.5)
+            late_scaling = champ_meta.get("late_scaling", 0.5)
+            
+            # Team balance score: reward filling gaps in team composition
+            if team_analysis["power_curve"] == "early" and late_scaling > 0.7:
+                balance_bonus = 0.15  # Team needs late game
+            elif team_analysis["power_curve"] == "late" and early_impact > 0.7:
+                balance_bonus = 0.15  # Team needs early game
+            else:
+                balance_bonus = team_analysis["balance_score"] * 0.05
+            
+            # Jungle early impact bonus
+            early_game_score = 0.0
+            if is_jungle and early_impact > 0.7:
+                early_game_score = early_impact * 0.1  # Bonus for early game junglers
+            
+            # Adaptive weighting based on draft stage
+            # Balanced weights for good differentiation without over-extrapolation
+            if team_size <= 1:
+                # Early draft: prioritize flex picks and strong meta
+                weights = {
+                    "tier": 0.35,
+                    "synergy": 0.25,
+                    "counter": 0.35,
+                    "vulnerability": -0.40,
+                    "flex": 0.20,
+                    "viability": 0.15,
+                    "balance": 0.08,
+                    "early_jungle": 0.10
+                }
+            elif team_size <= 3:
+                # Mid draft: balance synergy and counters
+                weights = {
+                    "tier": 0.25,
+                    "synergy": 0.50,
+                    "counter": 0.45,
+                    "vulnerability": -0.50,
+                    "flex": 0.10,
+                    "viability": 0.15,
+                    "balance": 0.15,
+                    "early_jungle": 0.10
+                }
+            else:
+                # Late draft: heavily focus on synergy and filling gaps
+                weights = {
+                    "tier": 0.20,
+                    "synergy": 0.75,
+                    "counter": 0.40,
+                    "vulnerability": -0.65,
+                    "flex": 0.05,
+                    "viability": 0.12,
+                    "balance": 0.25,
+                    "early_jungle": 0.10
+                }
+            
+            # Combined score
             total_score = (
-                tier_score * 0.15 +
-                synergy_score * 0.35 +
-                counter_score * 0.30 -
-                vulnerability_score * 0.20 +
-                champ["role_viability"] * 0.15  # Role fit bonus
+                tier_score * weights["tier"] +
+                synergy_score * weights["synergy"] +
+                counter_score * weights["counter"] +
+                vulnerability_score * weights["vulnerability"] +
+                flex_score * weights["flex"] +
+                champ["role_viability"] * weights["viability"] +
+                balance_bonus * weights["balance"] +
+                early_game_score * weights["early_jungle"]
             )
             
             # Get tier info for display
-            tier_info = self.champion_tiers.get(champ["id"], {})
+            tier_info = self.champion_tiers.get(champ_id, {})
             tier_name = tier_info.get("tier", "B")
             
             recommendations.append({
@@ -334,6 +492,10 @@ class DraftEngine:
                 "synergy_score": synergy_score,
                 "counter_score": counter_score,
                 "vulnerability_score": vulnerability_score,
+                "flex_score": flex_score,
+                "early_impact": early_impact,
+                "late_scaling": late_scaling,
+                "balance_bonus": balance_bonus,
                 "synergy_explanations": synergy_exp,
                 "counter_explanations": counter_exp,
                 "vulnerability_explanations": vulnerability_exp

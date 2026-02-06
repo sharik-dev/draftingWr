@@ -131,25 +131,25 @@ function ChampionTable({ recommendations, filter, onChampionClick, isSelectionMo
                                     height: '100%'
                                 }}>
                                     <div style={{
-                                        fontSize: '0.85rem',
-                                        fontWeight: '700',
-                                        color: rec.champion.role_viability > 0.7 ? 'var(--winrate-high)' :
-                                            rec.champion.role_viability > 0.4 ? 'var(--winrate-mid)' :
-                                                'var(--winrate-low)',
-                                        textShadow: `0 0 8px ${rec.champion.role_viability > 0.7 ? 'var(--winrate-high)' :
-                                            rec.champion.role_viability > 0.4 ? 'var(--winrate-mid)' :
-                                                'var(--winrate-low)'}`
+                                        fontSize: '0.9rem',
+                                        fontWeight: '800',
+                                        color: rec.tier_name === 'S+' ? '#ff0055' :
+                                            rec.tier_name === 'S' ? '#00ccff' :
+                                                rec.tier_name === 'A' ? '#00ff88' :
+                                                    'rgba(255, 255, 255, 0.6)',
+                                        textShadow: rec.tier_name === 'S+' || rec.tier_name === 'S' ? '0 0 10px currentColor' : 'none'
                                     }}>
-                                        {formatRoleViability(rec.champion.role_viability)}
+                                        {rec.tier_name}
                                     </div>
                                     <div style={{
                                         fontSize: '0.65rem',
-                                        color: 'rgba(212, 175, 55, 0.5)',
-                                        marginTop: '2px',
+                                        color: 'rgba(255, 255, 255, 0.4)',
+                                        marginTop: '0px',
                                         fontFamily: 'var(--font-mono)'
                                     }}>
-                                        ROLE
+                                        TIER
                                     </div>
+
                                 </div>
                             </div>
 
@@ -210,35 +210,7 @@ function ChampionTable({ recommendations, filter, onChampionClick, isSelectionMo
                                             {rec.champion.name}
                                         </span>
                                         {/* Tier Badge */}
-                                        {rec.tier_name && (
-                                            <span style={{
-                                                fontSize: '0.65rem',
-                                                padding: '2px 8px',
-                                                background: rec.tier_name === 'S+' ? 'linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(255, 140, 0, 0.3))' :
-                                                    rec.tier_name === 'S' ? 'rgba(255, 215, 0, 0.2)' :
-                                                        rec.tier_name === 'A' ? 'rgba(76, 201, 240, 0.2)' :
-                                                            rec.tier_name === 'B' ? 'rgba(100, 255, 100, 0.15)' :
-                                                                'rgba(150, 150, 150, 0.15)',
-                                                border: rec.tier_name === 'S+' ? '1px solid rgba(255, 215, 0, 0.6)' :
-                                                    rec.tier_name === 'S' ? '1px solid rgba(255, 215, 0, 0.5)' :
-                                                        rec.tier_name === 'A' ? '1px solid rgba(76, 201, 240, 0.5)' :
-                                                            rec.tier_name === 'B' ? '1px solid rgba(100, 255, 100, 0.4)' :
-                                                                '1px solid rgba(150, 150, 150, 0.4)',
-                                                borderRadius: '4px',
-                                                color: rec.tier_name === 'S+' ? '#FFD700' :
-                                                    rec.tier_name === 'S' ? '#FFC700' :
-                                                        rec.tier_name === 'A' ? '#4CC9F0' :
-                                                            rec.tier_name === 'B' ? '#64FF64' :
-                                                                '#AAA',
-                                                fontFamily: 'var(--font-header)',
-                                                fontWeight: '800',
-                                                textTransform: 'uppercase',
-                                                letterSpacing: '0.5px',
-                                                textShadow: rec.tier_name.startsWith('S') ? '0 0 8px rgba(255, 215, 0, 0.5)' : 'none'
-                                            }}>
-                                                {rec.tier_name}
-                                            </span>
-                                        )}
+                                        {/* Tier badge moved to left column */}
                                     </div>
 
                                     {/* Additional info badges */}
@@ -308,7 +280,75 @@ function ChampionTable({ recommendations, filter, onChampionClick, isSelectionMo
                                                 textTransform: 'uppercase',
                                                 letterSpacing: '0.5px'
                                             }}>
-                                                {rec.vulnerability_explanations.length} Risk
+                                                {rec.vulnerability_explanations.length} Risque
+                                            </span>
+                                        )}
+                                        {/* Early Impact Badge */}
+                                        {rec.early_impact && rec.early_impact >= 0.75 && !isNaN(rec.early_impact) && (
+                                            <span style={{
+                                                fontSize: '0.65rem',
+                                                padding: '2px 6px',
+                                                background: 'rgba(255, 165, 0, 0.15)',
+                                                border: '1px solid rgba(255, 165, 0, 0.4)',
+                                                borderRadius: '4px',
+                                                color: '#FFA500',
+                                                fontFamily: 'var(--font-mono)',
+                                                fontWeight: '600',
+                                                textTransform: 'uppercase',
+                                                letterSpacing: '0.5px'
+                                            }}>
+                                                ⚡ Début de Partie
+                                            </span>
+                                        )}
+                                        {/* Late Scaling Badge */}
+                                        {rec.late_scaling && rec.late_scaling >= 0.85 && !isNaN(rec.late_scaling) && (
+                                            <span style={{
+                                                fontSize: '0.65rem',
+                                                padding: '2px 6px',
+                                                background: 'rgba(138, 43, 226, 0.15)',
+                                                border: '1px solid rgba(138, 43, 226, 0.4)',
+                                                borderRadius: '4px',
+                                                color: '#9370DB',
+                                                fontFamily: 'var(--font-mono)',
+                                                fontWeight: '600',
+                                                textTransform: 'uppercase',
+                                                letterSpacing: '0.5px'
+                                            }}>
+                                                📈 Fin de Partie
+                                            </span>
+                                        )}
+                                        {/* Flex Pick Badge */}
+                                        {rec.flex_score && rec.flex_score >= 0.15 && !isNaN(rec.flex_score) && (
+                                            <span style={{
+                                                fontSize: '0.65rem',
+                                                padding: '2px 6px',
+                                                background: 'rgba(255, 215, 0, 0.15)',
+                                                border: '1px solid rgba(255, 215, 0, 0.4)',
+                                                borderRadius: '4px',
+                                                color: '#FFD700',
+                                                fontFamily: 'var(--font-mono)',
+                                                fontWeight: '600',
+                                                textTransform: 'uppercase',
+                                                letterSpacing: '0.5px'
+                                            }}>
+                                                🔄 Polyvalent
+                                            </span>
+                                        )}
+                                        {/* Team Balance Badge */}
+                                        {rec.balance_bonus && rec.balance_bonus >= 0.10 && !isNaN(rec.balance_bonus) && (
+                                            <span style={{
+                                                fontSize: '0.65rem',
+                                                padding: '2px 6px',
+                                                background: 'rgba(50, 205, 50, 0.15)',
+                                                border: '1px solid rgba(50, 205, 50, 0.4)',
+                                                borderRadius: '4px',
+                                                color: '#32CD32',
+                                                fontFamily: 'var(--font-mono)',
+                                                fontWeight: '600',
+                                                textTransform: 'uppercase',
+                                                letterSpacing: '0.5px'
+                                            }}>
+                                                ⚖️ Équilibre
                                             </span>
                                         )}
                                     </div>
@@ -337,7 +377,7 @@ function ChampionTable({ recommendations, filter, onChampionClick, isSelectionMo
                                         fontWeight: '800',
                                         lineHeight: '1'
                                     }}>
-                                        {rec.total_score.toFixed(2)}
+                                        {(rec.total_score || 0).toFixed(2)}
                                     </div>
                                 </div>
                             </div>
@@ -359,180 +399,96 @@ function ChampionTable({ recommendations, filter, onChampionClick, isSelectionMo
 
                         {/* Expanded Details */}
                         {isExpanded && (
-                            <div className="rec-details">
-                                <strong>
-                                    ⚔️ Strategic Analysis
-                                </strong>
+                            <div className="rec-details" style={{
+                                padding: '16px',
+                                background: 'rgba(0, 0, 0, 0.2)',
+                                borderTop: '1px solid rgba(255, 255, 255, 0.05)',
+                                animation: 'slideDown 0.3s ease-out'
+                            }}>
+                                <div style={{ display: 'grid', gridTemplateColumns: 'minmax(200px, 1fr) 1fr', gap: '20px' }}>
 
-                                {rec.synergy_explanations.length > 0 && (
+                                    {/* Colonne Gauche: Stats & Style */}
                                     <div>
-                                        <span style={{
-                                            color: 'var(--winrate-high)',
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            gap: '8px'
-                                        }}>
-                                            <span style={{
-                                                fontSize: '1.2rem'
-                                            }}>🤝</span>
-                                            Synergies
-                                            <span style={{
-                                                fontSize: '0.75rem',
-                                                padding: '2px 8px',
-                                                background: 'rgba(0, 255, 136, 0.2)',
-                                                borderRadius: '12px',
-                                                fontFamily: 'var(--font-mono)'
-                                            }}>
-                                                +{rec.synergy_explanations.length}
-                                            </span>
-                                        </span>
-                                        <ul>
-                                            {rec.synergy_explanations.map((e, i) => (
-                                                <li
-                                                    key={i}
-                                                    style={{
-                                                        borderLeftColor: 'var(--winrate-high)',
-                                                        animationDelay: `${i * 0.1}s`,
-                                                        animation: 'slideInFromLeft 0.3s ease both'
-                                                    }}
-                                                >
-                                                    {e}
-                                                </li>
+                                        <h4 style={{ margin: '0 0 10px 0', fontSize: '0.8rem', color: '#888', textTransform: 'uppercase', letterSpacing: '1px' }}>PROFIL DU CHAMPION</h4>
+
+                                        <div style={{ display: 'flex', gap: '10px', marginBottom: '12px' }}>
+                                            <div style={{ background: 'rgba(255,255,255,0.08)', padding: '6px 10px', borderRadius: '6px', fontSize: '0.8rem' }}>
+                                                ⚔️ Type: <strong style={{ color: '#fff' }}>{rec.champion.damage_type || 'Adaptatif'}</strong>
+                                            </div>
+                                            <div style={{ background: 'rgba(255,255,255,0.08)', padding: '6px 10px', borderRadius: '6px', fontSize: '0.8rem' }}>
+                                                📈 Scaling: <strong style={{ color: '#fff' }}>{rec.champion.scaling === 'early' ? 'Début' : rec.champion.scaling === 'late' ? 'Fin' : 'Moyen'}</strong>
+                                            </div>
+                                        </div>
+
+                                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '15px' }}>
+                                            {rec.champion.kit_tags && rec.champion.kit_tags.filter(t => t !== rec.champion.id).map(tag => (
+                                                <span key={tag} style={{
+                                                    fontSize: '0.7rem', padding: '3px 8px', borderRadius: '10px',
+                                                    background: 'rgba(100, 200, 255, 0.1)', color: '#8cf', border: '1px solid rgba(100, 200, 255, 0.2)'
+                                                }}>
+                                                    #{tag}
+                                                </span>
                                             ))}
+                                        </div>
+
+                                        <div style={{ fontSize: '0.85rem', color: '#ccc', fontStyle: 'italic', borderLeft: '3px solid var(--accent-blue)', paddingLeft: '10px', lineHeight: '1.4' }}>
+                                            "{rec.champion.description || 'Un choix solide pour cette composition. Adaptez votre build selon la situation.'}"
+                                        </div>
+                                    </div>
+
+                                    {/* Colonne Droite: Analyse Draft */}
+                                    <div>
+                                        <h4 style={{ margin: '0 0 10px 0', fontSize: '0.8rem', color: '#888', textTransform: 'uppercase', letterSpacing: '1px' }}>ANALYSE DU DRAFT</h4>
+                                        <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: '0.85rem' }}>
+
+                                            {/* Synergies */}
+                                            {rec.synergy_explanations.length > 0 ? (
+                                                rec.synergy_explanations.map((e, i) => (
+                                                    <li key={i} style={{ marginBottom: '8px', color: '#e0e0e0', display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                                                        <span style={{ color: 'var(--winrate-high)' }}>✓</span>
+                                                        <span>{e.replace("with", "avec").replace("Knockups enable", "Les knockups activent").replace("Protect scalers", "Protège les hyperscalers").replace("Shields enable", "Les boucliers permettent").replace("Mobile teams can", "Les équipes mobiles peuvent")}</span>
+                                                    </li>
+                                                ))
+                                            ) : (
+                                                <li style={{ color: '#666', fontStyle: 'italic', marginBottom: '8px' }}>• Pas de synergie majeure détectée.</li>
+                                            )}
+
+                                            {/* Counters */}
+                                            {rec.counter_explanations.length > 0 && (
+                                                rec.counter_explanations.map((e, i) => (
+                                                    <li key={i} style={{ marginBottom: '8px', color: 'var(--accent-blue)', display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                                                        <span>⚔️</span>
+                                                        <span>{e.replace("Strong against", "Fort contre").replace("Good against", "Bon contre").replace("Counters", "Contre")}</span>
+                                                    </li>
+                                                ))
+                                            )}
+
+                                            {/* Risks */}
+                                            {rec.vulnerability_explanations.length > 0 && (
+                                                rec.vulnerability_explanations.map((e, i) => (
+                                                    <li key={i} style={{ marginBottom: '8px', color: 'var(--accent-red)', display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                                                        <span>⚠️</span>
+                                                        <span>{e.replace("Weak against", "Faible contre").replace("Vulnerable to", "Vulnérable à")}</span>
+                                                    </li>
+                                                ))
+                                            )}
                                         </ul>
                                     </div>
-                                )}
+                                </div>
 
-                                {rec.counter_explanations.length > 0 && (
-                                    <div>
-                                        <span style={{
-                                            color: 'var(--accent-blue)',
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            gap: '8px'
-                                        }}>
-                                            <span style={{
-                                                fontSize: '1.2rem'
-                                            }}>🛡️</span>
-                                            Counters
-                                            <span style={{
-                                                fontSize: '0.75rem',
-                                                padding: '2px 8px',
-                                                background: 'rgba(76, 201, 240, 0.2)',
-                                                borderRadius: '12px',
-                                                fontFamily: 'var(--font-mono)'
-                                            }}>
-                                                +{rec.counter_explanations.length}
-                                            </span>
-                                        </span>
-                                        <ul>
-                                            {rec.counter_explanations.map((e, i) => (
-                                                <li
-                                                    key={i}
-                                                    style={{
-                                                        borderLeftColor: 'var(--accent-blue)',
-                                                        animationDelay: `${i * 0.1}s`,
-                                                        animation: 'slideInFromLeft 0.3s ease both'
-                                                    }}
-                                                >
-                                                    {e}
-                                                </li>
-                                            ))}
-                                        </ul>
+                                {/* Barre de Score Globale */}
+                                <div style={{ marginTop: '15px', paddingTop: '10px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+                                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '5px' }}>
+                                        <span style={{ fontSize: '0.75rem', color: '#888', textTransform: 'uppercase' }}>PERTINENCE GLOBALE</span>
+                                        <span style={{ fontSize: '0.9rem', fontWeight: 'bold', color: scoreColor }}>{(rec.total_score || 0).toFixed(2)} / 5.0</span>
                                     </div>
-                                )}
-
-                                {rec.vulnerability_explanations.length > 0 && (
-                                    <div>
-                                        <span style={{
-                                            color: 'var(--accent-red)',
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            gap: '8px'
-                                        }}>
-                                            <span style={{
-                                                fontSize: '1.2rem'
-                                            }}>⚠️</span>
-                                            Risks
-                                            <span style={{
-                                                fontSize: '0.75rem',
-                                                padding: '2px 8px',
-                                                background: 'rgba(247, 37, 133, 0.2)',
-                                                borderRadius: '12px',
-                                                fontFamily: 'var(--font-mono)'
-                                            }}>
-                                                {rec.vulnerability_explanations.length}
-                                            </span>
-                                        </span>
-                                        <ul>
-                                            {rec.vulnerability_explanations.map((e, i) => (
-                                                <li
-                                                    key={i}
-                                                    style={{
-                                                        borderLeftColor: 'var(--accent-red)',
-                                                        animationDelay: `${i * 0.1}s`,
-                                                        animation: 'slideInFromLeft 0.3s ease both'
-                                                    }}
-                                                >
-                                                    {e}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                )}
-
-                                {/* Overall Score Breakdown */}
-                                <div style={{
-                                    marginTop: '16px',
-                                    padding: '12px',
-                                    background: 'rgba(0, 0, 0, 0.3)',
-                                    borderRadius: '8px',
-                                    border: '1px solid rgba(212, 175, 55, 0.2)'
-                                }}>
-                                    <div style={{
-                                        display: 'flex',
-                                        justifyContent: 'space-between',
-                                        alignItems: 'center',
-                                        marginBottom: '8px'
-                                    }}>
-                                        <span style={{
-                                            fontFamily: 'var(--font-header)',
-                                            fontSize: '0.9rem',
-                                            color: 'var(--c-gold-1)',
-                                            textTransform: 'uppercase',
-                                            letterSpacing: '1px'
-                                        }}>
-                                            Overall Rating
-                                        </span>
-                                        <span style={{
-                                            fontFamily: 'var(--font-header)',
-                                            fontSize: '1.4rem',
-                                            color: scoreColor,
-                                            fontWeight: '800',
-                                            textShadow: `0 0 15px ${scoreColor}`
-                                        }}>
-                                            {scoreGrade}
-                                        </span>
-                                    </div>
-                                    <div style={{
-                                        width: '100%',
-                                        height: '8px',
-                                        background: 'rgba(0, 0, 0, 0.5)',
-                                        borderRadius: '4px',
-                                        overflow: 'hidden',
-                                        position: 'relative'
-                                    }}>
+                                    <div style={{ width: '100%', height: '4px', background: 'rgba(255,255,255,0.1)', borderRadius: '2px' }}>
                                         <div style={{
-                                            position: 'absolute',
-                                            left: 0,
-                                            top: 0,
+                                            width: `${Math.min(((rec.total_score || 0) / 1.5) * 100, 100)}%`,
                                             height: '100%',
-                                            width: `${Math.min((rec.total_score / 1.5) * 100, 100)}%`,
-                                            background: `linear-gradient(90deg, ${scoreColor}, transparent)`,
-                                            borderRadius: '4px',
-                                            boxShadow: `0 0 10px ${scoreColor}`,
-                                            transition: 'width 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-                                            animation: 'fillBar 0.8s ease'
+                                            background: scoreColor,
+                                            borderRadius: '2px',
+                                            boxShadow: `0 0 10px ${scoreColor}`
                                         }} />
                                     </div>
                                 </div>

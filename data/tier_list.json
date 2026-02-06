@@ -9,7 +9,7 @@
     },
     "champion_tiers": {
         "aatrox": {
-            "tier": "A",
+            "tier": "S+",
             "notes": "Strong sustain and teamfight presence"
         },
         "ahri": {
@@ -44,9 +44,17 @@
             "tier": "A",
             "notes": "Great utility ADC with global ult"
         },
-        "aurelion_sol": {
+        "aurelionSol": {
             "tier": "B",
-            "notes": "Unique roaming playstyle, map pressure"
+            "notes": "Auto-generated - needs manual tier assignment"
+        },
+        "aurora": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
+        },
+        "bard": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
         },
         "blitzcrank": {
             "tier": "A",
@@ -69,7 +77,7 @@
             "notes": "Elite duelist, true damage, lockdown ultimate"
         },
         "corki": {
-            "tier": "C",
+            "tier": "S",
             "notes": "Weak early game, scales but inconsistent"
         },
         "darius": {
@@ -77,12 +85,12 @@
             "notes": "Lane bully, executes, dominates low mobility"
         },
         "diana": {
-            "tier": "S",
+            "tier": "A",
             "notes": "Strong AP assassin/fighter, great engage"
         },
-        "dr_mundo": {
-            "tier": "A",
-            "notes": "Unkillable tank with percentage health damage"
+        "drMundo": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
         },
         "draven": {
             "tier": "B",
@@ -112,9 +120,17 @@
             "tier": "A",
             "notes": "Slippery assassin, untargetable E"
         },
-        "garen": {
+        "galio": {
             "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
+        },
+        "garen": {
+            "tier": "A",
             "notes": "Simple but lacks mobility and CC"
+        },
+        "gnar": {
+            "tier": "B",
+            "notes": "Dual form tank, hard to master"
         },
         "gragas": {
             "tier": "A",
@@ -127,10 +143,6 @@
         "gwen": {
             "tier": "A",
             "notes": "AP fighter with huge true damage potential"
-        },
-        "gnar": {
-            "tier": "B",
-            "notes": "Dual form tank, hard to master"
         },
         "hecarim": {
             "tier": "B",
@@ -148,9 +160,9 @@
             "tier": "B",
             "notes": "Disengage queen but passive playstyle"
         },
-        "jarvan_iv": {
-            "tier": "A",
-            "notes": "Solid engage tank jungle, versatile"
+        "jarvanIV": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
         },
         "jax": {
             "tier": "S",
@@ -168,9 +180,9 @@
             "tier": "S",
             "notes": "Hypercarry, resets, massive teamfight damage"
         },
-        "kai_sa": {
-            "tier": "S+",
-            "notes": "Hybrid damage, evolution spikes, safe"
+        "kaisa": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
         },
         "kalista": {
             "tier": "C",
@@ -179,10 +191,6 @@
         "karma": {
             "tier": "B",
             "notes": "Poke and shields but lacks hard engage"
-        },
-        "karthus": {
-            "tier": "B",
-            "notes": "Global ult pressure, farm heavy"
         },
         "kassadin": {
             "tier": "A",
@@ -204,21 +212,21 @@
             "tier": "B",
             "notes": "AOE stun engage but squishy"
         },
-        "kha_zix": {
-            "tier": "S",
-            "notes": "Isolation assassin, evolves, resets"
+        "khazix": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
         },
         "kindred": {
             "tier": "B",
             "notes": "Scaling marks, ultimate can backfire"
         },
-        "kog_maw": {
-            "tier": "A",
-            "notes": "Shreds tanks, immobile hypercarry"
+        "kogMaw": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
         },
-        "lee_sin": {
+        "leeSin": {
             "tier": "S+",
-            "notes": "Skill expression champion, mobility, kick"
+            "notes": "Auto-generated - needs manual tier assignment"
         },
         "leona": {
             "tier": "S",
@@ -227,6 +235,14 @@
         "lillia": {
             "tier": "B",
             "notes": "AP skirmisher jungle, movement speed"
+        },
+        "lissandra": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
+        },
+        "lucian": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
         },
         "lulu": {
             "tier": "S+",
@@ -240,17 +256,29 @@
             "tier": "S",
             "notes": "Knockup ultimate, armor scaling, counters AD"
         },
-        "master_yi": {
-            "tier": "A",
-            "notes": "Hypercarry melee, alpha strike dodges"
-        },
         "maokai": {
             "tier": "B",
             "notes": "Engage tank, CC chain, saplings"
         },
-        "miss_fortune": {
-            "tier": "A",
-            "notes": "AOE ultimate, strong laning phase"
+        "masterYi": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
+        },
+        "mel": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
+        },
+        "milio": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
+        },
+        "missFortune": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
+        },
+        "monkeyKing": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
         },
         "mordekaiser": {
             "tier": "A",
@@ -284,9 +312,13 @@
             "tier": "A",
             "notes": "Global darkness ultimate, assassin jungler"
         },
-        "nunu_willump": {
+        "norra": {
             "tier": "B",
-            "notes": "Objective control, snowball engage"
+            "notes": "Auto-generated - needs manual tier assignment"
+        },
+        "nunu": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
         },
         "olaf": {
             "tier": "B",
@@ -312,13 +344,17 @@
             "tier": "A",
             "notes": "Assassin support, execute gives gold"
         },
+        "rakan": {
+            "tier": "S",
+            "notes": "Engage/disengage master, charm, mobility"
+        },
         "rammus": {
             "tier": "B",
             "notes": "Reflects damage, taunt, armor stacking"
         },
-        "rakan": {
-            "tier": "S",
-            "notes": "Engage/disengage master, charm, mobility"
+        "rell": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
         },
         "renekton": {
             "tier": "A",
@@ -335,6 +371,10 @@
         "rumble": {
             "tier": "B",
             "notes": "AOE damage, overheat mechanic"
+        },
+        "ryze": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
         },
         "samira": {
             "tier": "S",
@@ -384,6 +424,10 @@
             "tier": "S",
             "notes": "Global heal, sustain queen, silences"
         },
+        "swain": {
+            "tier": "S+",
+            "notes": "Auto-generated - needs manual tier assignment"
+        },
         "syndra": {
             "tier": "A",
             "notes": "Burst mage, stun, orb control"
@@ -408,9 +452,9 @@
             "tier": "B",
             "notes": "Split push king, unkillable ult, RNG crits"
         },
-        "twisted_fate": {
-            "tier": "A",
-            "notes": "Global ultimate, gold card stun, utility"
+        "twistedFate": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
         },
         "twitch": {
             "tier": "A",
@@ -432,6 +476,14 @@
             "tier": "A",
             "notes": "Infinite AP stacking, zone cage"
         },
+        "velkoz": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
+        },
+        "vex": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
+        },
         "vi": {
             "tier": "S",
             "notes": "Point-click ultimate lockdown, armor shred"
@@ -439,6 +491,10 @@
         "viego": {
             "tier": "S",
             "notes": "Resets by possessing enemies, game-changer"
+        },
+        "viktor": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
         },
         "vladimir": {
             "tier": "A",
@@ -452,17 +508,13 @@
             "tier": "B",
             "notes": "Healing sustain, suppression ult"
         },
-        "wukong": {
-            "tier": "A",
-            "notes": "Clone mindgames, knockup ultimate"
-        },
         "xayah": {
             "tier": "S",
             "notes": "Feathers, root, untargetable ultimate"
         },
-        "xin_zhao": {
-            "tier": "A",
-            "notes": "Early game jungler, knockup, zone ult"
+        "xinZhao": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
         },
         "yasuo": {
             "tier": "S+",
@@ -471,10 +523,6 @@
         "yone": {
             "tier": "S",
             "notes": "Spirit form, shields, knock-up, teamfight"
-        },
-        "yorick": {
-            "tier": "C",
-            "notes": "Split push maiden, niche champion"
         },
         "yuumi": {
             "tier": "B",
@@ -491,6 +539,10 @@
         "ziggs": {
             "tier": "A",
             "notes": "Siege king, execute tower, poke"
+        },
+        "zilean": {
+            "tier": "B",
+            "notes": "Auto-generated - needs manual tier assignment"
         },
         "zoe": {
             "tier": "A",

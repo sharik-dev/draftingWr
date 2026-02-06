@@ -123,6 +123,25 @@ body::after {
   z-index: 1;
 }
 
+.header-centered {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.header-centered h1 {
+  grid-column: 2;
+  text-align: center;
+  margin: 0;
+}
+
+.lang-switcher {
+  grid-column: 3;
+  justify-self: end;
+  display: flex;
+  gap: 10px;
+}
+
 /* Header - Ultra Premium */
 .header {
   height: 90px;
@@ -135,6 +154,25 @@ body::after {
   position: relative;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
+}
+
+.header-centered {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.header-centered h1 {
+  grid-column: 2;
+  text-align: center;
+  margin: 0;
+}
+
+.lang-switcher {
+  grid-column: 3;
+  justify-self: end;
+  display: flex;
+  gap: 10px;
 }
 
 .header::before {
