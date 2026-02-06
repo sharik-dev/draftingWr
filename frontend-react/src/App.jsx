@@ -187,10 +187,36 @@ function App() {
 
   if (loading) return <div className="app-loading">{t('app.loading')}</div>;
 
+  // Calculate Damage Distribution
+  const calculateDamageDist = (team) => {
+    let ad = 0;
+    let ap = 0;
+    let count = 0;
+
+    team.forEach(pick => {
+      if (pick) {
+        count++;
+        const type = pick.damage_type || 'Adaptive';
+        if (type === 'AD') ad += 1;
+        else if (type === 'AP') ap += 1;
+        else { ad += 0.5; ap += 0.5; }
+      }
+    });
+
+    if (count === 0) return { ad: 50, ap: 50 };
+    return {
+      ad: Math.round((ad / count) * 100),
+      ap: Math.round((ap / count) * 100)
+    };
+  };
+
+  const allyDist = calculateDamageDist(teamPicks);
+  const enemyDist = calculateDamageDist(enemyPicks);
+
   return (
     <div className="app">
       <header className="header header-centered">
-        <h1>{t('app.title')}</h1>
+        <h1> <img src="./src/assets/Gemini_Generated_Image_6.png" alt="Logo" width="20" height="20" /> {t('app.title')}</h1>
 
         <div className="lang-switcher">
           <button onClick={() => i18n.changeLanguage('fr')}>🇫🇷</button>
@@ -271,6 +297,18 @@ function App() {
                   }} />
                 </div>
               </div>
+
+              {/* Force Ally Damage Bar */}
+              <div style={{ width: '140px', marginTop: '8px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.6rem', fontWeight: 'bold', marginBottom: '3px' }}>
+                  <span style={{ color: '#ffae42' }}>AD {allyDist.ad}%</span>
+                  <span style={{ color: '#c77dff' }}>AP {allyDist.ap}%</span>
+                </div>
+                <div style={{ height: '6px', width: '100%', background: 'rgba(0,0,0,0.5)', borderRadius: '3px', display: 'flex', overflow: 'hidden' }}>
+                  <div style={{ width: `${allyDist.ad}%`, background: 'linear-gradient(90deg, #ffae42, #ff7b00)', height: '100%' }} />
+                  <div style={{ width: `${allyDist.ap}%`, background: 'linear-gradient(90deg, #9d4edd, #c77dff)', height: '100%' }} />
+                </div>
+              </div>
             </div>
 
             {/* VS */}
@@ -331,6 +369,18 @@ function App() {
                   textShadow: '0 0 20px rgba(255, 51, 102, 0.6)'
                 }}>
                   {enemyStrength.toFixed(2)}
+                </div>
+              </div>
+
+              {/* Force Enemy Damage Bar */}
+              <div style={{ width: '140px', marginTop: '8px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.6rem', fontWeight: 'bold', marginBottom: '3px' }}>
+                  <span style={{ color: '#ffae42' }}>AD {enemyDist.ad}%</span>
+                  <span style={{ color: '#c77dff' }}>AP {enemyDist.ap}%</span>
+                </div>
+                <div style={{ height: '6px', width: '100%', background: 'rgba(0,0,0,0.5)', borderRadius: '3px', display: 'flex', overflow: 'hidden' }}>
+                  <div style={{ width: `${enemyDist.ad}%`, background: 'linear-gradient(90deg, #ffae42, #ff7b00)', height: '100%' }} />
+                  <div style={{ width: `${enemyDist.ap}%`, background: 'linear-gradient(90deg, #9d4edd, #c77dff)', height: '100%' }} />
                 </div>
               </div>
             </div>

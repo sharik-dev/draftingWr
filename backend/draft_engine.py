@@ -125,11 +125,28 @@ class DraftEngine:
         else:
             curve = "mid"
         
+        # Calculate damage type distribution
+        ad_count = 0
+        ap_count = 0
+        
+        for champ_id in team:
+            if champ_id in self.champion_map:
+                dmg_type = self.champion_map[champ_id].get("damage_type", "Adaptive")
+                if dmg_type == "AD":
+                    ad_count += 1
+                elif dmg_type == "AP":
+                    ap_count += 1
+                elif dmg_type in ["Mixed", "Adaptive"]:
+                    ad_count += 0.5
+                    ap_count += 0.5
+        
         return {
             "early_power": avg_early,
             "late_power": avg_late,
             "balance_score": balance,
-            "power_curve": curve
+            "power_curve": curve,
+            "ad_count": ad_count,
+            "ap_count": ap_count
         }
     
     def calculate_flex_score(self, champion_id: str, role: str) -> float:
@@ -428,7 +445,35 @@ class DraftEngine:
             early_game_score = 0.0
             if is_jungle and early_impact > 0.7:
                 early_game_score = early_impact * 0.1  # Bonus for early game junglers
+                
+            # Damage Type Balance Bonus
+            damage_balance_bonus = 0.0
+            damage_explanation = None
             
+            champ_dmg = champ.get("damage_type", "Adaptive")
+            
+            # If team is heavy on AD (3+ AD users), need AP
+            if team_analysis.get("ad_count", 0) >= 2.5 and team_analysis.get("ap_count", 0) < 1.5:
+                if champ_dmg == "AP":
+                    damage_balance_bonus = 0.20
+                    damage_explanation = "⚖️ Équilibre les dégâts : Besoin de Magie"
+                elif champ_dmg in ["Mixed", "Adaptive"]:
+                    damage_balance_bonus = 0.10
+                    damage_explanation = "⚖️ Équilibre les dégâts : Dégâts Mixtes utiles"
+                    
+            # If team is heavy on AP (3+ AP users), need AD
+            elif team_analysis.get("ap_count", 0) >= 2.5 and team_analysis.get("ad_count", 0) < 1.5:
+                if champ_dmg == "AD":
+                    damage_balance_bonus = 0.20
+                    damage_explanation = "⚖️ Équilibre les dégâts : Besoin de Physique"
+                elif champ_dmg in ["Mixed", "Adaptive"]:
+                    damage_balance_bonus = 0.10
+                    damage_explanation = "⚖️ Équilibre les dégâts : Dégâts Mixtes utiles"
+            
+            if damage_explanation:
+                synergy_exp.insert(0, damage_explanation)  # Add to top of explanations
+            
+
             # Adaptive weighting based on draft stage
             # Balanced weights for good differentiation without over-extrapolation
             if team_size <= 1:
@@ -477,7 +522,8 @@ class DraftEngine:
                 flex_score * weights["flex"] +
                 champ["role_viability"] * weights["viability"] +
                 balance_bonus * weights["balance"] +
-                early_game_score * weights["early_jungle"]
+                early_game_score * weights["early_jungle"] +
+                damage_balance_bonus
             )
             
             # Get tier info for display

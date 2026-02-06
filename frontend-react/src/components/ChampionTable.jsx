@@ -284,7 +284,7 @@ function ChampionTable({ recommendations, filter, onChampionClick, isSelectionMo
                                             </span>
                                         )}
                                         {/* Early Impact Badge */}
-                                        {rec.early_impact && rec.early_impact >= 0.75 && !isNaN(rec.early_impact) && (
+                                        {rec.early_impact >= 0.75 && (
                                             <span style={{
                                                 fontSize: '0.65rem',
                                                 padding: '2px 6px',
@@ -301,7 +301,7 @@ function ChampionTable({ recommendations, filter, onChampionClick, isSelectionMo
                                             </span>
                                         )}
                                         {/* Late Scaling Badge */}
-                                        {rec.late_scaling && rec.late_scaling >= 0.85 && !isNaN(rec.late_scaling) && (
+                                        {rec.late_scaling >= 0.85 && (
                                             <span style={{
                                                 fontSize: '0.65rem',
                                                 padding: '2px 6px',
@@ -318,7 +318,7 @@ function ChampionTable({ recommendations, filter, onChampionClick, isSelectionMo
                                             </span>
                                         )}
                                         {/* Flex Pick Badge */}
-                                        {rec.flex_score && rec.flex_score >= 0.15 && !isNaN(rec.flex_score) && (
+                                        {rec.flex_score >= 0.15 && (
                                             <span style={{
                                                 fontSize: '0.65rem',
                                                 padding: '2px 6px',
@@ -335,7 +335,7 @@ function ChampionTable({ recommendations, filter, onChampionClick, isSelectionMo
                                             </span>
                                         )}
                                         {/* Team Balance Badge */}
-                                        {rec.balance_bonus && rec.balance_bonus >= 0.10 && !isNaN(rec.balance_bonus) && (
+                                        {rec.balance_bonus >= 0.10 && (
                                             <span style={{
                                                 fontSize: '0.65rem',
                                                 padding: '2px 6px',
