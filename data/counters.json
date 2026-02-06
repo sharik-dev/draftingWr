@@ -1,0 +1,240 @@
+{
+    "counters": [
+        {
+            "name": "Mobility vs Skillshot",
+            "attacker_tags": [
+                "mobility"
+            ],
+            "defender_tags": [
+                "skillshot",
+                "poke"
+            ],
+            "score": 0.7,
+            "explanation": "High mobility makes dodging skillshots easier"
+        },
+        {
+            "name": "Windwall vs Projectile",
+            "attacker_tags": [
+                "windwall"
+            ],
+            "defender_tags": [
+                "ranged",
+                "poke"
+            ],
+            "score": 0.8,
+            "explanation": "Yasuo's windwall negates ranged poke and abilities"
+        },
+        {
+            "name": "Hook vs Immobile",
+            "attacker_tags": [
+                "hook"
+            ],
+            "defender_tags": [
+                "immobile",
+                "hypercarry"
+            ],
+            "score": 0.85,
+            "explanation": "Immobile carries are easy hook targets"
+        },
+        {
+            "name": "Burst vs Squishy",
+            "attacker_tags": [
+                "burst",
+                "assassin"
+            ],
+            "defender_tags": [
+                "squishy"
+            ],
+            "score": 0.75,
+            "explanation": "Burst damage instantly kills squishy targets"
+        },
+        {
+            "name": "Tank vs Burst",
+            "attacker_tags": [
+                "tank"
+            ],
+            "defender_tags": [
+                "burst"
+            ],
+            "score": 0.65,
+            "explanation": "Tanks absorb burst and survive assassination attempts"
+        },
+        {
+            "name": "Sustain vs Poke",
+            "attacker_tags": [
+                "sustain",
+                "heal"
+            ],
+            "defender_tags": [
+                "poke"
+            ],
+            "score": 0.7,
+            "explanation": "Sustain negates poke damage over time"
+        },
+        {
+            "name": "True Damage vs Tank",
+            "attacker_tags": [
+                "true_damage"
+            ],
+            "defender_tags": [
+                "tank",
+                "armor_scaling"
+            ],
+            "score": 0.9,
+            "explanation": "True damage bypasses tank resistances"
+        },
+        {
+            "name": "Peel vs Dive",
+            "attacker_tags": [
+                "peel",
+                "disengage"
+            ],
+            "defender_tags": [
+                "dive",
+                "assassin"
+            ],
+            "score": 0.8,
+            "explanation": "Peel protects carries from dive/assassin threats"
+        },
+        {
+            "name": "Disengage vs Engage",
+            "attacker_tags": [
+                "disengage"
+            ],
+            "defender_tags": [
+                "engage"
+            ],
+            "score": 0.75,
+            "explanation": "Disengage tools counter hard engage compositions"
+        },
+        {
+            "name": "Early vs Late",
+            "attacker_tags": [
+                "early_game"
+            ],
+            "defender_tags": [
+                "scaling",
+                "late"
+            ],
+            "score": 0.7,
+            "explanation": "Early game pressure prevents scalers from reaching their powerspike"
+        },
+        {
+            "name": "CC vs Channel",
+            "attacker_tags": [
+                "cc"
+            ],
+            "defender_tags": [
+                "channel"
+            ],
+            "score": 0.9,
+            "explanation": "CC interrupts channeled abilities"
+        },
+        {
+            "name": "Polymorph vs AA",
+            "attacker_tags": [
+                "polymorph"
+            ],
+            "defender_tags": [
+                "auto_attack",
+                "hypercarry"
+            ],
+            "score": 0.8,
+            "explanation": "Polymorph disables auto-attack based champions"
+        },
+        {
+            "name": "Shield/Wall vs Poke",
+            "attacker_tags": [
+                "shield",
+                "wall"
+            ],
+            "defender_tags": [
+                "poke"
+            ],
+            "score": 0.7,
+            "explanation": "Shields and walls block poke damage"
+        },
+        {
+            "name": "Stealth Detection",
+            "attacker_tags": [
+                "reveal"
+            ],
+            "defender_tags": [
+                "stealth"
+            ],
+            "score": 0.85,
+            "explanation": "Stealth detection counters stealth-based champions"
+        },
+        {
+            "name": "Displacement vs Position",
+            "attacker_tags": [
+                "displacement"
+            ],
+            "defender_tags": [
+                "positioning"
+            ],
+            "score": 0.75,
+            "explanation": "Displacement ruins positioning-reliant champions"
+        },
+        {
+            "name": "Execute vs Low HP",
+            "attacker_tags": [
+                "execute"
+            ],
+            "defender_tags": [
+                "sustain"
+            ],
+            "score": 0.6,
+            "explanation": "Executes finish targets before sustain saves them"
+        },
+        {
+            "name": "Anti-Heal vs Sustain",
+            "attacker_tags": [
+                "grievous"
+            ],
+            "defender_tags": [
+                "sustain",
+                "heal"
+            ],
+            "score": 0.8,
+            "explanation": "Grievous wounds reduces healing effectiveness"
+        },
+        {
+            "name": "Kite vs Melee",
+            "attacker_tags": [
+                "kite",
+                "ranged"
+            ],
+            "defender_tags": [
+                "melee",
+                "immobile"
+            ],
+            "score": 0.7,
+            "explanation": "Ranged kiting keeps melee champions at bay"
+        },
+        {
+            "name": "Gap Close vs Immobile",
+            "attacker_tags": [
+                "mobility",
+                "dash"
+            ],
+            "defender_tags": [
+                "immobile"
+            ],
+            "score": 0.75,
+            "explanation": "Gap closers stick to immobile champions"
+        },
+        {
+            "name": "AoE vs Grouped",
+            "attacker_tags": [
+                "AoE"
+            ],
+            "defender_tags": [
+                "engage",
+                "grouped"
+            ],
+            "score": 0.7,
+            "explanation": "AoE punishes grouped team compositions"
+        }
+    ]
+}

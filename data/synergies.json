@@ -1,0 +1,184 @@
+{
+    "synergies": [
+        {
+            "name": "Engage + AoE Damage",
+            "tags": [
+                "engage",
+                "AoE"
+            ],
+            "score": 0.9,
+            "explanation": "Hard engage enables follow-up AoE damage dealers to hit full team"
+        },
+        {
+            "name": "Knockup + Yasuo",
+            "tags": [
+                "knockup",
+                "yasuo"
+            ],
+            "score": 1.0,
+            "explanation": "Knockups enable Yasuo's ultimate for massive damage"
+        },
+        {
+            "name": "Peel + Hypercarry",
+            "tags": [
+                "peel",
+                "hypercarry"
+            ],
+            "score": 0.95,
+            "explanation": "Protect scalers to ensure they can carry late game"
+        },
+        {
+            "name": "Hook + Burst",
+            "tags": [
+                "hook",
+                "burst"
+            ],
+            "score": 0.85,
+            "explanation": "Hooks create picks for burst damage dealers to delete targets"
+        },
+        {
+            "name": "Shield + Poke",
+            "tags": [
+                "shield",
+                "poke"
+            ],
+            "score": 0.7,
+            "explanation": "Shields enable safe poke patterns in lane and teamfights"
+        },
+        {
+            "name": "Sustain + Poke",
+            "tags": [
+                "sustain",
+                "poke"
+            ],
+            "score": 0.75,
+            "explanation": "Sustain allows poke compositions to survive and win wars of attrition"
+        },
+        {
+            "name": "Tank + Dive",
+            "tags": [
+                "tank",
+                "dive"
+            ],
+            "score": 0.8,
+            "explanation": "Tanks frontline for dive compositions to reach backline"
+        },
+        {
+            "name": "CC Chain",
+            "tags": [
+                "cc",
+                "cc"
+            ],
+            "score": 0.85,
+            "explanation": "Multiple CC sources enable long lockdown chains"
+        },
+        {
+            "name": "Reset Synergy",
+            "tags": [
+                "reset",
+                "AoE"
+            ],
+            "score": 0.8,
+            "explanation": "AoE creates multi-kills for reset champions to snowball fights"
+        },
+        {
+            "name": "Mobility + Engage",
+            "tags": [
+                "mobility",
+                "engage"
+            ],
+            "score": 0.7,
+            "explanation": "Mobile teams can setup and follow engages effectively"
+        },
+        {
+            "name": "Lantern Save",
+            "tags": [
+                "lantern",
+                "engage"
+            ],
+            "score": 0.9,
+            "explanation": "Thresh lantern enables safe engage/disengage for team"
+        },
+        {
+            "name": "Buff + Hypercarry",
+            "tags": [
+                "buff",
+                "hypercarry"
+            ],
+            "score": 0.85,
+            "explanation": "Buffs multiply hypercarry effectiveness"
+        },
+        {
+            "name": "Disengage + Poke",
+            "tags": [
+                "disengage",
+                "poke"
+            ],
+            "score": 0.8,
+            "explanation": "Disengage protects poke compositions from all-ins"
+        },
+        {
+            "name": "Early Gank + Scaling",
+            "tags": [
+                "early_game",
+                "scaling"
+            ],
+            "score": 0.75,
+            "explanation": "Early pressure buys time for scalers to come online"
+        },
+        {
+            "name": "True Damage + Tank Shred",
+            "tags": [
+                "true_damage",
+                "tank"
+            ],
+            "score": 0.7,
+            "explanation": "True damage helps team deal with enemy tanks"
+        },
+        {
+            "name": "AoE + Teamfight",
+            "tags": [
+                "AoE",
+                "teamfight"
+            ],
+            "score": 0.8,
+            "explanation": "Multiple AoE sources dominate teamfights"
+        },
+        {
+            "name": "Stealth + Burst",
+            "tags": [
+                "stealth",
+                "burst"
+            ],
+            "score": 0.75,
+            "explanation": "Stealth enables clean burst setups"
+        },
+        {
+            "name": "Utility + Utility",
+            "tags": [
+                "utility",
+                "utility"
+            ],
+            "score": 0.7,
+            "explanation": "High utility teams control map and teamfights"
+        },
+        {
+            "name": "Kite + Peel",
+            "tags": [
+                "kite",
+                "peel"
+            ],
+            "score": 0.8,
+            "explanation": "Kite tools combined with peel make backline untouchable"
+        },
+        {
+            "name": "Assassin + Split Push",
+            "tags": [
+                "assassin",
+                "duelist"
+            ],
+            "score": 0.65,
+            "explanation": "Assassins create map pressure with split pushers"
+        }
+    ]
+}
