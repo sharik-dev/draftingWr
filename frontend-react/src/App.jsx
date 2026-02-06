@@ -5,7 +5,8 @@ import './App.css';
 
 // Components
 import DraftColumn from './components/DraftColumn';
-import ChampionTable from './components/ChampionTable'; // Renamed from RecommendationsList
+import ChampionTable from './components/ChampionTable';
+import TeamHeader from './components/TeamHeader';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
@@ -187,32 +188,6 @@ function App() {
 
   if (loading) return <div className="app-loading">{t('app.loading')}</div>;
 
-  // Calculate Damage Distribution
-  const calculateDamageDist = (team) => {
-    let ad = 0;
-    let ap = 0;
-    let count = 0;
-
-    team.forEach(pick => {
-      if (pick) {
-        count++;
-        const type = pick.damage_type || 'Adaptive';
-        if (type === 'AD') ad += 1;
-        else if (type === 'AP') ap += 1;
-        else { ad += 0.5; ap += 0.5; }
-      }
-    });
-
-    if (count === 0) return { ad: 50, ap: 50 };
-    return {
-      ad: Math.round((ad / count) * 100),
-      ap: Math.round((ap / count) * 100)
-    };
-  };
-
-  const allyDist = calculateDamageDist(teamPicks);
-  const enemyDist = calculateDamageDist(enemyPicks);
-
   return (
     <div className="app">
       <header className="header header-centered">
@@ -249,67 +224,12 @@ function App() {
             borderBottom: '2px solid rgba(212, 175, 55, 0.3)',
             alignItems: 'center'
           }}>
-            {/* Team Score */}
-            <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              gap: '8px'
-            }}>
-              <div style={{
-                fontFamily: 'var(--font-header)',
-                fontSize: '0.9rem',
-                color: 'var(--c-ally)',
-                textTransform: 'uppercase',
-                letterSpacing: '2px',
-                textShadow: '0 0 10px rgba(0, 255, 200, 0.5)'
-              }}>
-                FORCE ALLIÉE
-              </div>
-              <div style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '12px'
-              }}>
-                <div style={{
-                  fontFamily: 'var(--font-header)',
-                  fontSize: '2.5rem',
-                  fontWeight: '800',
-                  color: 'var(--c-ally)',
-                  textShadow: '0 0 20px rgba(0, 255, 200, 0.6)'
-                }}>
-                  {teamStrength.toFixed(2)}
-                </div>
-                <div style={{
-                  width: '100px',
-                  height: '12px',
-                  background: 'rgba(0, 0, 0, 0.5)',
-                  borderRadius: '6px',
-                  overflow: 'hidden',
-                  border: '1px solid rgba(0, 255, 200, 0.3)'
-                }}>
-                  <div style={{
-                    width: `${teamStrength * 100}%`,
-                    height: '100%',
-                    background: 'linear-gradient(90deg, var(--c-ally), transparent)',
-                    boxShadow: '0 0 10px var(--c-ally)',
-                    transition: 'width 0.5s ease'
-                  }} />
-                </div>
-              </div>
-
-              {/* Force Ally Damage Bar */}
-              <div style={{ width: '140px', marginTop: '8px' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.6rem', fontWeight: 'bold', marginBottom: '3px' }}>
-                  <span style={{ color: '#ffae42' }}>AD {allyDist.ad}%</span>
-                  <span style={{ color: '#c77dff' }}>AP {allyDist.ap}%</span>
-                </div>
-                <div style={{ height: '6px', width: '100%', background: 'rgba(0,0,0,0.5)', borderRadius: '3px', display: 'flex', overflow: 'hidden' }}>
-                  <div style={{ width: `${allyDist.ad}%`, background: 'linear-gradient(90deg, #ffae42, #ff7b00)', height: '100%' }} />
-                  <div style={{ width: `${allyDist.ap}%`, background: 'linear-gradient(90deg, #9d4edd, #c77dff)', height: '100%' }} />
-                </div>
-              </div>
-            </div>
+            <TeamHeader
+              title="FORCE ALLIÉE"
+              picks={teamPicks}
+              strength={teamStrength}
+              colorVar="--c-ally"
+            />
 
             {/* VS */}
             <div style={{
@@ -323,67 +243,12 @@ function App() {
               VS
             </div>
 
-            {/* Enemy Score */}
-            <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              gap: '8px'
-            }}>
-              <div style={{
-                fontFamily: 'var(--font-header)',
-                fontSize: '0.9rem',
-                color: 'var(--c-enemy)',
-                textTransform: 'uppercase',
-                letterSpacing: '2px',
-                textShadow: '0 0 10px rgba(255, 51, 102, 0.5)'
-              }}>
-                FORCE ENNEMIE
-              </div>
-              <div style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '12px'
-              }}>
-                <div style={{
-                  width: '100px',
-                  height: '12px',
-                  background: 'rgba(0, 0, 0, 0.5)',
-                  borderRadius: '6px',
-                  overflow: 'hidden',
-                  border: '1px solid rgba(255, 51, 102, 0.3)'
-                }}>
-                  <div style={{
-                    width: `${enemyStrength * 100}%`,
-                    height: '100%',
-                    background: 'linear-gradient(90deg, var(--c-enemy), transparent)',
-                    boxShadow: '0 0 10px var(--c-enemy)',
-                    transition: 'width 0.5s ease'
-                  }} />
-                </div>
-                <div style={{
-                  fontFamily: 'var(--font-header)',
-                  fontSize: '2.5rem',
-                  fontWeight: '800',
-                  color: 'var(--c-enemy)',
-                  textShadow: '0 0 20px rgba(255, 51, 102, 0.6)'
-                }}>
-                  {enemyStrength.toFixed(2)}
-                </div>
-              </div>
-
-              {/* Force Enemy Damage Bar */}
-              <div style={{ width: '140px', marginTop: '8px' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.6rem', fontWeight: 'bold', marginBottom: '3px' }}>
-                  <span style={{ color: '#ffae42' }}>AD {enemyDist.ad}%</span>
-                  <span style={{ color: '#c77dff' }}>AP {enemyDist.ap}%</span>
-                </div>
-                <div style={{ height: '6px', width: '100%', background: 'rgba(0,0,0,0.5)', borderRadius: '3px', display: 'flex', overflow: 'hidden' }}>
-                  <div style={{ width: `${enemyDist.ad}%`, background: 'linear-gradient(90deg, #ffae42, #ff7b00)', height: '100%' }} />
-                  <div style={{ width: `${enemyDist.ap}%`, background: 'linear-gradient(90deg, #9d4edd, #c77dff)', height: '100%' }} />
-                </div>
-              </div>
-            </div>
+            <TeamHeader
+              title="FORCE ENNEMIE"
+              picks={enemyPicks}
+              strength={enemyStrength}
+              colorVar="--c-enemy"
+            />
           </div>
 
           {/* Controls Bar (Search + Role Filters) */}
@@ -461,8 +326,6 @@ function App() {
               )}
             </div>
           )}
-
-          {/* Table header removed - using card-based design */}
 
           <div className="rec-list">
             <ChampionTable
