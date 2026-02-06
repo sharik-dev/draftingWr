@@ -1,7 +1,7 @@
 {
     "counters": [
         {
-            "name": "Mobility vs Skillshot",
+            "name": "Mobilité contre Compétence directionnelle",
             "attacker_tags": [
                 "mobility"
             ],
@@ -10,10 +10,10 @@
                 "poke"
             ],
             "score": 0.7,
-            "explanation": "High mobility makes dodging skillshots easier"
+            "explanation": "Une mobilité élevée facilite l'esquive des compétences directionnelles"
         },
         {
-            "name": "Windwall vs Projectile",
+            "name": "Mur de vent contre Projectile",
             "attacker_tags": [
                 "windwall"
             ],
@@ -22,10 +22,10 @@
                 "poke"
             ],
             "score": 0.8,
-            "explanation": "Yasuo's windwall negates ranged poke and abilities"
+            "explanation": "Le mur de vent de Yasuo annule le harcèlement et les capacités à distance"
         },
         {
-            "name": "Hook vs Immobile",
+            "name": "Grappin contre Immobile",
             "attacker_tags": [
                 "hook"
             ],
@@ -34,10 +34,10 @@
                 "hypercarry"
             ],
             "score": 0.85,
-            "explanation": "Immobile carries are easy hook targets"
+            "explanation": "Les carries immobiles sont des cibles faciles pour les grappins"
         },
         {
-            "name": "Burst vs Squishy",
+            "name": "Burst contre Peu Résistant",
             "attacker_tags": [
                 "burst",
                 "assassin"
@@ -46,10 +46,10 @@
                 "squishy"
             ],
             "score": 0.75,
-            "explanation": "Burst damage instantly kills squishy targets"
+            "explanation": "Les dégâts en burst éliminent instantanément les cibles peu résistantes"
         },
         {
-            "name": "Tank vs Burst",
+            "name": "Tank contre Burst",
             "attacker_tags": [
                 "tank"
             ],
@@ -57,10 +57,10 @@
                 "burst"
             ],
             "score": 0.65,
-            "explanation": "Tanks absorb burst and survive assassination attempts"
+            "explanation": "Les tanks absorbent les dégâts en burst et survivent aux tentatives d'assassinat"
         },
         {
-            "name": "Sustain vs Poke",
+            "name": "Régénération contre Harcèlement",
             "attacker_tags": [
                 "sustain",
                 "heal"
@@ -69,10 +69,10 @@
                 "poke"
             ],
             "score": 0.7,
-            "explanation": "Sustain negates poke damage over time"
+            "explanation": "La régénération annule les dégâts de harcèlement sur la durée"
         },
         {
-            "name": "True Damage vs Tank",
+            "name": "Dégâts Réels contre Tank",
             "attacker_tags": [
                 "true_damage"
             ],
@@ -81,10 +81,10 @@
                 "armor_scaling"
             ],
             "score": 0.9,
-            "explanation": "True damage bypasses tank resistances"
+            "explanation": "Les dégâts réels contournent les résistances des tanks"
         },
         {
-            "name": "Peel vs Dive",
+            "name": "Protection contre Plongée",
             "attacker_tags": [
                 "peel",
                 "disengage"
@@ -94,10 +94,10 @@
                 "assassin"
             ],
             "score": 0.8,
-            "explanation": "Peel protects carries from dive/assassin threats"
+            "explanation": "La protection protège les carries des menaces de plongée/d'assassin"
         },
         {
-            "name": "Disengage vs Engage",
+            "name": "Désengagement contre Engagement",
             "attacker_tags": [
                 "disengage"
             ],
@@ -105,10 +105,10 @@
                 "engage"
             ],
             "score": 0.75,
-            "explanation": "Disengage tools counter hard engage compositions"
+            "explanation": "Les outils de désengagement contrent les compositions à fort engagement"
         },
         {
-            "name": "Early vs Late",
+            "name": "Début de Partie contre Fin de Partie",
             "attacker_tags": [
                 "early_game"
             ],
@@ -117,10 +117,10 @@
                 "late"
             ],
             "score": 0.7,
-            "explanation": "Early game pressure prevents scalers from reaching their powerspike"
+            "explanation": "La pression en début de partie empêche les champions cumulatifs d'atteindre leur pic de puissance"
         },
         {
-            "name": "CC vs Channel",
+            "name": "CC contre Canalisation",
             "attacker_tags": [
                 "cc"
             ],
@@ -128,10 +128,10 @@
                 "channel"
             ],
             "score": 0.9,
-            "explanation": "CC interrupts channeled abilities"
+            "explanation": "Le CC interrompt les capacités canalisées"
         },
         {
-            "name": "Polymorph vs AA",
+            "name": "Métamorphose contre AA",
             "attacker_tags": [
                 "polymorph"
             ],
@@ -140,10 +140,10 @@
                 "hypercarry"
             ],
             "score": 0.8,
-            "explanation": "Polymorph disables auto-attack based champions"
+            "explanation": "La métamorphose désactive les champions basés sur les auto-attaques"
         },
         {
-            "name": "Shield/Wall vs Poke",
+            "name": "Bouclier/Mur contre Harcèlement",
             "attacker_tags": [
                 "shield",
                 "wall"
@@ -152,10 +152,10 @@
                 "poke"
             ],
             "score": 0.7,
-            "explanation": "Shields and walls block poke damage"
+            "explanation": "Les boucliers et les murs bloquent les dégâts de harcèlement"
         },
         {
-            "name": "Stealth Detection",
+            "name": "Détection de Camouflage",
             "attacker_tags": [
                 "reveal"
             ],
@@ -163,10 +163,10 @@
                 "stealth"
             ],
             "score": 0.85,
-            "explanation": "Stealth detection counters stealth-based champions"
+            "explanation": "La détection de camouflage contrecarre les champions basés sur la furtivité"
         },
         {
-            "name": "Displacement vs Position",
+            "name": "Déplacement contre Positionnement",
             "attacker_tags": [
                 "displacement"
             ],
@@ -174,10 +174,10 @@
                 "positioning"
             ],
             "score": 0.75,
-            "explanation": "Displacement ruins positioning-reliant champions"
+            "explanation": "Les déplacements ruinent les champions dépendants du positionnement"
         },
         {
-            "name": "Execute vs Low HP",
+            "name": "Exécution contre PV Bas",
             "attacker_tags": [
                 "execute"
             ],
@@ -185,10 +185,10 @@
                 "sustain"
             ],
             "score": 0.6,
-            "explanation": "Executes finish targets before sustain saves them"
+            "explanation": "Les exécutions achèvent les cibles avant que la régénération ne les sauve"
         },
         {
-            "name": "Anti-Heal vs Sustain",
+            "name": "Anti-Soin contre Régénération",
             "attacker_tags": [
                 "grievous"
             ],
@@ -197,10 +197,10 @@
                 "heal"
             ],
             "score": 0.8,
-            "explanation": "Grievous wounds reduces healing effectiveness"
+            "explanation": "Les blessures graves réduisent l'efficacité des soins"
         },
         {
-            "name": "Kite vs Melee",
+            "name": "Kitage contre Mêlée",
             "attacker_tags": [
                 "kite",
                 "ranged"
@@ -210,10 +210,10 @@
                 "immobile"
             ],
             "score": 0.7,
-            "explanation": "Ranged kiting keeps melee champions at bay"
+            "explanation": "Le kitage à distance maintient les champions de mêlée à distance"
         },
         {
-            "name": "Gap Close vs Immobile",
+            "name": "Fermeture de Distance contre Immobile",
             "attacker_tags": [
                 "mobility",
                 "dash"
@@ -222,10 +222,10 @@
                 "immobile"
             ],
             "score": 0.75,
-            "explanation": "Gap closers stick to immobile champions"
+            "explanation": "Les fermetures de distance collent aux champions immobiles"
         },
         {
-            "name": "AoE vs Grouped",
+            "name": "Zone contre Groupé",
             "attacker_tags": [
                 "AoE"
             ],
@@ -234,7 +234,7 @@
                 "grouped"
             ],
             "score": 0.7,
-            "explanation": "AoE punishes grouped team compositions"
+            "explanation": "Les dégâts de zone punissent les compositions d'équipe groupées"
         }
     ]
 }

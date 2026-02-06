@@ -5,17 +5,17 @@
       {
         "target": "aatrox",
         "strength": 0.8,
-        "reason": "Fiora's E riposte can block Aatrox's Q sweet spots and W knock-up, nullifying his combo"
+        "reason": "La riposte (E) de Fiora peut bloquer les points faibles du Q et le knock-up du W d'Aatrox, annulant son combo."
       },
       {
         "target": "darius",
         "strength": 0.75,
-        "reason": "Fiora can parry Darius's R execute and out-duel him with true damage"
+        "reason": "Fiora peut parier l'exécution ultime (R) de Darius et le vaincre en duel grâce à ses dégâts réels."
       },
       {
         "target": "garen",
         "strength": 0.7,
-        "reason": "Fiora's vitals proc true damage bypassing Garen's armor and she can riposte his ultimate"
+        "reason": "Les points vitaux de Fiora infligent des dégâts réels, contournant l'armure de Garen, et elle peut riposter à son ultime."
       }
     ],
     "strong_against": []
@@ -26,12 +26,12 @@
       {
         "target": "malphite",
         "strength": 0.9,
-        "reason": "Yasuo's windwall blocks Malphite's Q poke and R can follow-up on Malphite's ultimate for massive AOE damage"
+        "reason": "Le mur de vent de Yasuo bloque le harcèlement du Q de Malphite, et son ultime peut suivre celui de Malphite pour infliger d'énormes dégâts en zone."
       },
       {
         "target": "braum",
         "strength": 0.75,
-        "reason": "Yasuo can dash through minions to avoid Braum's Q and his ultimate synergizes with Braum's R knockup"
+        "reason": "Yasuo peut se faufiler à travers les sbires pour éviter le Q de Braum, et son ultime se combine au knock-up de l'ultime de Braum."
       }
     ],
     "strong_against": []
@@ -42,12 +42,12 @@
       {
         "target": "malphite",
         "strength": 0.85,
-        "reason": "Vayne's true damage from W shreds tanks like Malphite, and her mobility helps dodge his ultimate"
+        "reason": "Les dégâts réels du W de Vayne déchirent les tanks comme Malphite, et sa mobilité l'aide à esquiver son ultime."
       },
       {
         "target": "garen",
         "strength": 0.75,
-        "reason": "Silver Bolts proc true damage ignoring Garen's armor build"
+        "reason": "Les Carreaux d'Argent infligent des dégâts réels, ignorant l'accumulation d'armure de Garen."
       }
     ],
     "strong_against": []
@@ -58,17 +58,17 @@
       {
         "target": "lux",
         "strength": 0.85,
-        "reason": "Zed can easily dodge Lux's skill shots with his shadows and burst her down"
+        "reason": "Zed peut facilement esquiver les compétences de Lux avec ses ombres et l'éliminer rapidement."
       },
       {
         "target": "orianna",
         "strength": 0.7,
-        "reason": "Zed's mobility and assassination potential counters Orianna's immobility"
+        "reason": "La mobilité et le potentiel d'assassinat de Zed contrent l'immobilité d'Orianna."
       },
       {
         "target": "syndra",
         "strength": 0.75,
-        "reason": "Zed's R allows him to dodge Syndra's ultimate and assassinate her"
+        "reason": "L'ultime de Zed lui permet d'esquiver celui de Syndra et de l'assassiner."
       }
     ],
     "strong_against": []
@@ -79,17 +79,17 @@
       {
         "target": "thresh",
         "strength": 0.8,
-        "reason": "Morgana's E black shield blocks all CC from Thresh's kit"
+        "reason": "Le bouclier noir (E) de Morgana bloque tout le CC du kit de Thresh."
       },
       {
         "target": "leona",
         "strength": 0.85,
-        "reason": "Black shield negates Leona's entire engage combo"
+        "reason": "Le bouclier noir annule toute la combo d'engagement de Leona."
       },
       {
         "target": "blitzcrank",
         "strength": 0.9,
-        "reason": "Black shield prevents hook displacement and follow-up CC"
+        "reason": "Le bouclier noir empêche le déplacement du grappin et le CC qui suit."
       }
     ],
     "strong_against": []
@@ -100,17 +100,17 @@
       {
         "target": "irelia",
         "strength": 0.7,
-        "reason": "Jax's E counters Irelia's auto-attack reliant kit"
+        "reason": "La Contre (E) de Jax contrecarre le kit d'Irelia qui dépend des attaques automatiques."
       },
       {
         "target": "yasuo",
         "strength": 0.75,
-        "reason": "Counter Strike blocks Yasuo's auto attacks and Jax out-scales in duels"
+        "reason": "Contre-attaque bloque les attaques automatiques de Yasuo et Jax le surpasse en duels sur la durée."
       },
       {
         "target": "fiora",
         "strength": 0.65,
-        "reason": "Jax's E can dodge Fiora's vital procs during teamfights"
+        "reason": "Le E de Jax peut esquiver les procs de points vitaux de Fiora pendant les combats d'équipe."
       }
     ],
     "strong_against": []
@@ -121,17 +121,17 @@
       {
         "target": "yasuo",
         "strength": 0.8,
-        "reason": "Malphite's ultimate provides perfect knock-up for Yasuo's ultimate synergy"
+        "reason": "L'ultime de Malphite fournit un knock-up parfait pour la synergie avec l'ultime de Yasuo."
       },
       {
         "target": "irelia",
         "strength": 0.7,
-        "reason": "Armor stacking reduces Irelia's auto-attack damage significantly"
+        "reason": "L'accumulation d'armure réduit considérablement les dégâts d'attaques automatiques d'Irelia."
       },
       {
         "target": "jinx",
         "strength": 0.75,
-        "reason": "Malphite can engage on immobile Jinx and burst her with full combo"
+        "reason": "Malphite peut engager sur Jinx, peu mobile, et l'éliminer avec sa combo complète."
       }
     ],
     "strong_against": []
@@ -142,12 +142,12 @@
       {
         "target": "zed",
         "strength": 0.85,
-        "reason": "Lulu's polymorph and ultimate completely shut down Zed's assassination attempts"
+        "reason": "La métamorphose et l'ultime de Lulu annulent complètement les tentatives d'assassinat de Zed."
       },
       {
         "target": "rengar",
         "strength": 0.85,
-        "reason": "Ultimate knockup and polymorph counter Rengar's burst combo"
+        "reason": "Le knock-up de l'ultime et la métamorphose contrent la combo de burst de Rengar."
       }
     ],
     "strong_against": []
@@ -158,12 +158,12 @@
       {
         "target": "ezreal",
         "strength": 0.75,
-        "reason": "Braum's shield blocks all of Ezreal's poke damage"
+        "reason": "Le bouclier de Braum bloque tous les dégâts de harcèlement d'Ezreal."
       },
       {
         "target": "jinx",
         "strength": 0.7,
-        "reason": "Shield blocks Jinx's ultimate and W, protecting team"
+        "reason": "Le bouclier bloque l'ultime et le W de Jinx, protégeant l'équipe."
       }
     ],
     "strong_against": []
@@ -174,19 +174,19 @@
       {
         "target": "darius",
         "strength": -0.7,
-        "reason": "Darius hard counters Nasus in lane with poke and prevents stacking"
+        "reason": "Darius contrecarre fortement Nasus en lane avec son harcèlement et l'empêche d'accumuler des stacks."
       },
       {
         "target": "teemo",
         "strength": -0.8,
-        "reason": "Teemo's blind and poke denies Nasus stacks early game"
+        "reason": "L'aveuglement et le harcèlement de Teemo empêchent Nasus d'accumuler des stacks en début de partie."
       }
     ],
     "strong_against": [
       {
         "target": "riven",
         "strength": 0.65,
-        "reason": "Nasus can wither Riven and out-sustain her in extended trades"
+        "reason": "Nasus peut ralentir (W) Riven et la surpasser en duels prolongés grâce à sa régénération."
       }
     ]
   },
@@ -196,7 +196,7 @@
       {
         "target": "malphite",
         "strength": 0.75,
-        "reason": "Corki's magic damage from passive bypasses Malphite's armor stacking"
+        "reason": "Les dégâts magiques passifs de Corki contournent l'accumulation d'armure de Malphite."
       }
     ],
     "strong_against": []
@@ -207,12 +207,12 @@
       {
         "target": "syndra",
         "strength": 0.7,
-        "reason": "Kassadin's passive reduces magic damage and he can burst mages post-6"
+        "reason": "Le passif de Kassadin réduit les dégâts magiques et il peut éliminer les mages après le niveau 6."
       },
       {
         "target": "katarina",
         "strength": 0.75,
-        "reason": "Silence interrupt Katarina's ultimate and kassadin out-scales"
+        "reason": "Le silence interrompt l'ultime de Katarina et Kassadin la surpasse sur la durée."
       }
     ],
     "strong_against": []
@@ -223,12 +223,12 @@
       {
         "target": "teemo",
         "strength": -0.75,
-        "reason": "Teemo's blind and kiting completely denies Garen's damage"
+        "reason": "L'aveuglement et le kite de Teemo empêchent complètement les dégâts de Garen."
       },
       {
         "target": "vayne",
         "strength": -0.7,
-        "reason": "Vayne's true damage and kiting counter Garen's tankiness"
+        "reason": "Les dégâts réels et le kite de Vayne contrent la robustesse de Garen."
       }
     ],
     "strong_against": []
@@ -239,19 +239,19 @@
       {
         "target": "morgana",
         "strength": -0.8,
-        "reason": "Morgana's black shield completely negates Thresh's hook and CC chain"
+        "reason": "Le bouclier noir de Morgana annule complètement le grappin et l'enchaînement de CC de Thresh."
       }
     ],
     "strong_against": [
       {
         "target": "jinx",
         "strength": 0.75,
-        "reason": "Hook can easily catch immobile Jinx and set up kills"
+        "reason": "Le grappin peut facilement attraper Jinx, peu mobile, et permettre des éliminations."
       },
       {
         "target": "ashe",
         "strength": 0.7,
-        "reason": "Ashe has no escape from Thresh hook"
+        "reason": "Ashe n'a pas d'échappatoire face au grappin de Thresh."
       }
     ]
   },
@@ -261,14 +261,14 @@
       {
         "target": "morgana",
         "strength": -0.85,
-        "reason": "Black shield makes hook useless"
+        "reason": "Le bouclier noir rend le grappin inutile."
       }
     ],
     "strong_against": [
       {
         "target": "ezreal",
         "strength": 0.6,
-        "reason": "Even with blink, one successful hook can win the fight"
+        "reason": "Même avec son téléport, un grappin réussi peut faire gagner le combat."
       }
     ]
   },
@@ -278,12 +278,12 @@
       {
         "target": "nasus",
         "strength": 0.8,
-        "reason": "Darius denies Nasus stacks and dominates lane phase"
+        "reason": "Darius empêche Nasus d'accumuler des stacks et domine la phase de lane."
       },
       {
         "target": "garen",
         "strength": 0.7,
-        "reason": "Darius out-damages and out-trades Garen in extended fights"
+        "reason": "Darius inflige plus de dégâts et surpasse Garen dans les combats prolongés."
       }
     ],
     "strong_against": []
@@ -294,7 +294,7 @@
       {
         "target": "yasuo",
         "strength": 0.75,
-        "reason": "Ultimate provides perfect setup for Yasuo's ultimate"
+        "reason": "L'ultime fournit une configuration parfaite pour l'ultime de Yasuo."
       }
     ],
     "strong_against": []
@@ -305,7 +305,7 @@
       {
         "target": "katarina",
         "strength": 0.8,
-        "reason": "Alistar's knock-up interrupts Katarina's ultimate channel"
+        "reason": "Le knock-up d'Alistar interrompt le channel de l'ultime de Katarina."
       }
     ],
     "strong_against": []

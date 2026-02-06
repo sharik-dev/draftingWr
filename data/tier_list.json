@@ -10,547 +10,547 @@
     "champion_tiers": {
         "aatrox": {
             "tier": "S+",
-            "notes": "Strong sustain and teamfight presence"
+            "notes": "Fort potentiel de régénération et présence en teamfight"
         },
         "ahri": {
             "tier": "S",
-            "notes": "High mobility, safe laning, good pick potential"
+            "notes": "Haute mobilité, laning safe, bon potentiel de picks"
         },
         "akali": {
             "tier": "A",
-            "notes": "High skill cap assassin, strong in right hands"
+            "notes": "Assassin à haut plafond de skill, fort entre les bonnes mains"
         },
         "akshan": {
             "tier": "B",
-            "notes": "Unique revive mechanic but inconsistent"
+            "notes": "Mécanique de revive unique mais inconstante"
         },
         "alistar": {
             "tier": "A",
-            "notes": "Excellent engage and peel tank support"
+            "notes": "Excellent tank support d'engagement et de protection"
         },
         "ambessa": {
             "tier": "S",
-            "notes": "New strong fighter with great outplay potential"
+            "notes": "Nouveau combattant puissant avec un grand potentiel d'outplay"
         },
         "amumu": {
             "tier": "S",
-            "notes": "Game-changing ultimate, strong jungle clear"
+            "notes": "Ultimate qui change la donne, clear de jungle efficace"
         },
         "annie": {
             "tier": "B",
-            "notes": "Good burst but telegraphed engage"
+            "notes": "Bon burst mais engagement télégraphié"
         },
         "ashe": {
             "tier": "A",
-            "notes": "Great utility ADC with global ult"
+            "notes": "Excellent ADC utilitaire avec un ultimate global"
         },
         "aurelionSol": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "aurora": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "bard": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "blitzcrank": {
             "tier": "A",
-            "notes": "Hook can win games, high impact support"
+            "notes": "Le grappin peut gagner des parties, support à fort impact"
         },
         "brand": {
             "tier": "B",
-            "notes": "High damage but immobile"
+            "notes": "Dégâts élevés mais peu mobile"
         },
         "braum": {
             "tier": "A",
-            "notes": "Excellent projectile denial and peel"
+            "notes": "Excellent déni de projectiles et protection"
         },
         "caitlyn": {
             "tier": "A",
-            "notes": "Safe laning, good poke and siege"
+            "notes": "Laning safe, bon harcèlement et siège"
         },
         "camille": {
             "tier": "S+",
-            "notes": "Elite duelist, true damage, lockdown ultimate"
+            "notes": "Duelliste d'élite, dégâts réels, ultimate de confinement"
         },
         "corki": {
             "tier": "S",
-            "notes": "Weak early game, scales but inconsistent"
+            "notes": "Début de partie faible, évolue mais inconstant"
         },
         "darius": {
             "tier": "S",
-            "notes": "Lane bully, executes, dominates low mobility"
+            "notes": "Tyran de lane, exécutions, domine les cibles peu mobiles"
         },
         "diana": {
             "tier": "A",
-            "notes": "Strong AP assassin/fighter, great engage"
+            "notes": "Assassin/combattant AP puissant, excellent engagement"
         },
         "drMundo": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "draven": {
             "tier": "B",
-            "notes": "High damage but requires snowball"
+            "notes": "Dégâts élevés mais nécessite de snowballer"
         },
         "ekko": {
             "tier": "S+",
-            "notes": "Ultimate assassin mobility, huge outplay potential"
+            "notes": "Mobilité ultime d'assassin, énorme potentiel d'outplay"
         },
         "evelynn": {
             "tier": "A",
-            "notes": "Stealth assassin, terrorizes squishies"
+            "notes": "Assassin furtif, terrorise les cibles peu résistantes"
         },
         "ezreal": {
             "tier": "S",
-            "notes": "Safest ADC, poke, mobility, global ult"
+            "notes": "ADC le plus safe, harcèlement, mobilité, ultimate global"
         },
         "fiddlesticks": {
             "tier": "B",
-            "notes": "Fear and drain, good in chaotic fights"
+            "notes": "Peur et drain, efficace dans les combats chaotiques"
         },
         "fiora": {
             "tier": "S+",
-            "notes": "Best duelist, true damage, riposte counters"
+            "notes": "Meilleur duelliste, dégâts réels, riposte contrecarre"
         },
         "fizz": {
             "tier": "A",
-            "notes": "Slippery assassin, untargetable E"
+            "notes": "Assassin insaisissable, E intouchable"
         },
         "galio": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "garen": {
             "tier": "A",
-            "notes": "Simple but lacks mobility and CC"
+            "notes": "Simple mais manque de mobilité et de CC"
         },
         "gnar": {
             "tier": "B",
-            "notes": "Dual form tank, hard to master"
+            "notes": "Tank à double forme, difficile à maîtriser"
         },
         "gragas": {
             "tier": "A",
-            "notes": "Versatile tank/AP, displacement ultimate"
+            "notes": "Tank/AP polyvalent, ultimate de déplacement"
         },
         "graves": {
             "tier": "S",
-            "notes": "Strong jungle duelist, tanky ADC"
+            "notes": "Duelliste de jungle puissant, ADC tanky"
         },
         "gwen": {
             "tier": "A",
-            "notes": "AP fighter with huge true damage potential"
+            "notes": "Combattante AP avec un énorme potentiel de dégâts réels"
         },
         "hecarim": {
             "tier": "B",
-            "notes": "Speed engage jungler, fell off meta"
+            "notes": "Jungleur à engagement rapide, sorti de la meta"
         },
         "heimerdinger": {
             "tier": "C",
-            "notes": "Turret zone control, niche pick"
+            "notes": "Contrôle de zone par tourelles, choix de niche"
         },
         "irelia": {
             "tier": "S+",
-            "notes": "Insane mobility, dueling, teamfight monster"
+            "notes": "Mobilité folle, duels, monstre en teamfight"
         },
         "janna": {
             "tier": "B",
-            "notes": "Disengage queen but passive playstyle"
+            "notes": "Reine du désengagement mais style de jeu passif"
         },
         "jarvanIV": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "jax": {
             "tier": "S",
-            "notes": "Scales incredibly, dodges autos, duelist"
+            "notes": "Évolue incroyablement, esquive les auto-attaques, duelliste"
         },
         "jayce": {
             "tier": "B",
-            "notes": "Poke/all-in but falls off late"
+            "notes": "Harcèlement/all-in mais décroît en fin de partie"
         },
         "jhin": {
             "tier": "A",
-            "notes": "Long range sniper ADC, high burst"
+            "notes": "ADC sniper longue portée, burst élevé"
         },
         "jinx": {
             "tier": "S",
-            "notes": "Hypercarry, resets, massive teamfight damage"
+            "notes": "Hyper carry, resets, dégâts massifs en teamfight"
         },
         "kaisa": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "kalista": {
             "tier": "C",
-            "notes": "Hard to play on mobile, niche"
+            "notes": "Difficile à jouer sur mobile, niche"
         },
         "karma": {
             "tier": "B",
-            "notes": "Poke and shields but lacks hard engage"
+            "notes": "Harcèlement et boucliers mais manque d'engagement fort"
         },
         "kassadin": {
             "tier": "A",
-            "notes": "Anti-mage, scales hard, mobile"
+            "notes": "Anti-mage, évolue fortement, mobile"
         },
         "katarina": {
             "tier": "S",
-            "notes": "Reset queen, pentakill potential"
+            "notes": "Reine des resets, potentiel de pentakill"
         },
         "kayle": {
             "tier": "A",
-            "notes": "Extreme late game hypercarry"
+            "notes": "Hyper carry de fin de partie extrême"
         },
         "kayn": {
             "tier": "S+",
-            "notes": "Form versatility, red or blue dominates"
+            "notes": "Versatilité des formes, rouge ou bleu domine"
         },
         "kennen": {
             "tier": "B",
-            "notes": "AOE stun engage but squishy"
+            "notes": "Engagement par stun en zone mais peu résistant"
         },
         "khazix": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "kindred": {
             "tier": "B",
-            "notes": "Scaling marks, ultimate can backfire"
+            "notes": "Marques cumulatives, ultimate peut se retourner contre soi"
         },
         "kogMaw": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "leeSin": {
             "tier": "S+",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "leona": {
             "tier": "S",
-            "notes": "Lockdown engage support, tanky"
+            "notes": "Support d'engagement de confinement, tanky"
         },
         "lillia": {
             "tier": "B",
-            "notes": "AP skirmisher jungle, movement speed"
+            "notes": "Skirmisher AP jungle, vitesse de déplacement"
         },
         "lissandra": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "lucian": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "lulu": {
             "tier": "S+",
-            "notes": "Best enchanter, polymorph, shields, ultimate"
+            "notes": "Meilleur enchanter, métamorphose, boucliers, ultimate"
         },
         "lux": {
             "tier": "A",
-            "notes": "Long range mage, burst, shield"
+            "notes": "Mage longue portée, burst, bouclier"
         },
         "malphite": {
             "tier": "S",
-            "notes": "Knockup ultimate, armor scaling, counters AD"
+            "notes": "Ultimate avec knockup, cumul d'armure, contrecarre l'AD"
         },
         "maokai": {
             "tier": "B",
-            "notes": "Engage tank, CC chain, saplings"
+            "notes": "Tank d'engagement, chaîne de CC, saprolins"
         },
         "masterYi": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "mel": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "milio": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "missFortune": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "monkeyKing": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "mordekaiser": {
             "tier": "A",
-            "notes": "Death realm isolation, tanky AP"
+            "notes": "Isolement dans le royaume des morts, tank AP"
         },
         "morgana": {
             "tier": "S",
-            "notes": "Black shield negates CC, zone control"
+            "notes": "Bouclier noir annule le CC, contrôle de zone"
         },
         "nami": {
             "tier": "S",
-            "notes": "Sustain, CC, wave ultimate, versatile"
+            "notes": "Régénération, CC, ultimate en vague, polyvalente"
         },
         "nasus": {
             "tier": "B",
-            "notes": "Infinite scaling but kitable"
+            "notes": "Cumul infini mais kiteable"
         },
         "nautilus": {
             "tier": "A",
-            "notes": "Point-click lockdown, tanky engage"
+            "notes": "Confinement point&click, engagement tanky"
         },
         "nidalee": {
             "tier": "C",
-            "notes": "High skill cap jungle, poke/heal"
+            "notes": "Jungle à haut plafond de skill, harcèlement/soin"
         },
         "nilah": {
             "tier": "A",
-            "notes": "Melee ADC, shared XP mechanic"
+            "notes": "ADC mêlée, mécanique d'XP partagée"
         },
         "nocturne": {
             "tier": "A",
-            "notes": "Global darkness ultimate, assassin jungler"
+            "notes": "Ultimate global d'obscurité, assassin jungler"
         },
         "norra": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "nunu": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "olaf": {
             "tier": "B",
-            "notes": "Unstoppable ult, runs down targets"
+            "notes": "Ultimate imparable, pourchasse les cibles"
         },
         "orianna": {
             "tier": "S",
-            "notes": "Teamfight mage, shield, game-winner ult"
+            "notes": "Mage de teamfight, bouclier, ultimate qui fait gagner"
         },
         "ornn": {
             "tier": "A",
-            "notes": "Tank with item upgrades, knockup"
+            "notes": "Tank avec améliorations d'objets, knockup"
         },
         "pantheon": {
             "tier": "A",
-            "notes": "Early game bully, point-click stun"
+            "notes": "Tyran début de partie, stun point&click"
         },
         "poppy": {
             "tier": "A",
-            "notes": "Anti-dash tank, wall stun"
+            "notes": "Tank anti-dash, stun contre les murs"
         },
         "pyke": {
             "tier": "A",
-            "notes": "Assassin support, execute gives gold"
+            "notes": "Support assassin, exécution donne de l'or"
         },
         "rakan": {
             "tier": "S",
-            "notes": "Engage/disengage master, charm, mobility"
+            "notes": "Maître de l'engagement/désengagement, charme, mobilité"
         },
         "rammus": {
             "tier": "B",
-            "notes": "Reflects damage, taunt, armor stacking"
+            "notes": "Renvoie les dégâts, provocation, cumul d'armure"
         },
         "rell": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "renekton": {
             "tier": "A",
-            "notes": "Lane bully, sustain, stun"
+            "notes": "Tyran de lane, régénération, stun"
         },
         "rengar": {
             "tier": "S",
-            "notes": "Camouflage assassin, one-shot potential"
+            "notes": "Assassin camouflé, potentiel de one-shot"
         },
         "riven": {
             "tier": "S+",
-            "notes": "Animation cancels, mobility, outplay queen"
+            "notes": "Annulations d'animations, mobilité, reine de l'outplay"
         },
         "rumble": {
             "tier": "B",
-            "notes": "AOE damage, overheat mechanic"
+            "notes": "Dégâts en zone, mécanique de surchauffe"
         },
         "ryze": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "samira": {
             "tier": "S",
-            "notes": "Windwall, ultimate is pentakill button"
+            "notes": "Mur de vent, ultimate = bouton de pentakill"
         },
         "senna": {
             "tier": "A",
-            "notes": "Scaling ADC support, infinite range"
+            "notes": "Support ADC cumulatif, portée infinie"
         },
         "seraphine": {
             "tier": "A",
-            "notes": "AOE charm, shields, teamfight mage"
+            "notes": "Charme en zone, boucliers, mage de teamfight"
         },
         "sett": {
             "tier": "A",
-            "notes": "Grit shield, W true damage, suplex"
+            "notes": "Bouclier de détermination, dégâts réels au W, suplex"
         },
         "shen": {
             "tier": "A",
-            "notes": "Global ultimate save, taunt engage"
+            "notes": "Ultimate global de sauvetage, engagement par provocation"
         },
         "shyvana": {
             "tier": "C",
-            "notes": "Dragon form power spike, farm heavy"
+            "notes": "Pic de puissance en forme de dragon, joueur farmeur"
         },
         "singed": {
             "tier": "C",
-            "notes": "Proxy farming, poison trail, niche"
+            "notes": "Proxy farm, trainée de poison, choix de niche"
         },
         "sion": {
             "tier": "B",
-            "notes": "Infinite HP stacking, charge engage"
+            "notes": "Cumul infini de PV, engagement par charge"
         },
         "sivir": {
             "tier": "A",
-            "notes": "Waveclear queen, spell shield, speed ult"
+            "notes": "Reine du clear de vague, bouclier anti-sort, ultimate de vitesse"
         },
         "smolder": {
             "tier": "B",
-            "notes": "Scaling dragon ADC, newer champion"
+            "notes": "ADC dragon cumulatif, champion plus récent"
         },
         "sona": {
             "tier": "A",
-            "notes": "Aura buffs, crescendo ultimate, scales"
+            "notes": "Auras de buff, ultimate crescendo, évolue"
         },
         "soraka": {
             "tier": "S",
-            "notes": "Global heal, sustain queen, silences"
+            "notes": "Soin global, reine de la régénération, silences"
         },
         "swain": {
             "tier": "S+",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "syndra": {
             "tier": "A",
-            "notes": "Burst mage, stun, orb control"
+            "notes": "Mage à burst, stun, contrôle des orbes"
         },
         "talon": {
             "tier": "A",
-            "notes": "Roaming assassin, parkour, burst"
+            "notes": "Assassin itinérant, parkour, burst"
         },
         "teemo": {
             "tier": "B",
-            "notes": "Blind, shrooms, lane bully but scales poorly"
+            "notes": "Aveuglement, champignons, tyran de lane mais évolue mal"
         },
         "thresh": {
             "tier": "S+",
-            "notes": "Hook, lantern, flay - ultimate support kit"
+            "notes": "Grappin, lanterne, coup de faux - kit de support ultime"
         },
         "tristana": {
             "tier": "A",
-            "notes": "Self-peel ADC, rocket jump resets"
+            "notes": "ADC à auto-protection, resets du saut roquette"
         },
         "tryndamere": {
             "tier": "B",
-            "notes": "Split push king, unkillable ult, RNG crits"
+            "notes": "Roi du split push, ultimate invincible, crits aléatoires"
         },
         "twistedFate": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "twitch": {
             "tier": "A",
-            "notes": "Stealth positioning, teamfight shredder"
+            "notes": "Positionnement furtif, déchiqueteur en teamfight"
         },
         "urgot": {
             "tier": "B",
-            "notes": "Ranged juggernaut, execute ultimate"
+            "notes": "Juggernaut à distance, ultimate d'exécution"
         },
         "varus": {
             "tier": "A",
-            "notes": "Poke or on-hit builds, root ultimate"
+            "notes": "Builds de harcèlement ou on-hit, ultimate d'immobilisation"
         },
         "vayne": {
             "tier": "S+",
-            "notes": "Tank shredder, true damage, invisibility"
+            "notes": "Déchiqueteuse de tanks, dégâts réels, invisibilité"
         },
         "veigar": {
             "tier": "A",
-            "notes": "Infinite AP stacking, zone cage"
+            "notes": "Cumul infini d'AP, cage de zone"
         },
         "velkoz": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "vex": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "vi": {
             "tier": "S",
-            "notes": "Point-click ultimate lockdown, armor shred"
+            "notes": "Confinement point&click, réduction d'armure"
         },
         "viego": {
             "tier": "S",
-            "notes": "Resets by possessing enemies, game-changer"
+            "notes": "Resets en possédant les ennemis, changeur de jeu"
         },
         "viktor": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "vladimir": {
             "tier": "A",
-            "notes": "Pool untargetable, sustain, AOE damage"
+            "notes": "Mare de sang intouchable, régénération, dégâts en zone"
         },
         "volibear": {
             "tier": "B",
-            "notes": "Dive potential, tower disable"
+            "notes": "Potentiel de plongée, désactivation des tours"
         },
         "warwick": {
             "tier": "B",
-            "notes": "Healing sustain, suppression ult"
+            "notes": "Régénération de soin, ultimate de suppression"
         },
         "xayah": {
             "tier": "S",
-            "notes": "Feathers, root, untargetable ultimate"
+            "notes": "Plumes, immobilisation, ultimate intouchable"
         },
         "xinZhao": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "yasuo": {
             "tier": "S+",
-            "notes": "Windwall, knockup synergy, infinite scaling"
+            "notes": "Mur de vent, synergie avec les knockups, cumul infini"
         },
         "yone": {
             "tier": "S",
-            "notes": "Spirit form, shields, knock-up, teamfight"
+            "notes": "Forme spirituelle, boucliers, knock-up, teamfight"
         },
         "yuumi": {
             "tier": "B",
-            "notes": "Attach mechanic, heals, but team-dependent"
+            "notes": "Mécanique d'attache, soins, mais dépendant de l'équipe"
         },
         "zed": {
             "tier": "S+",
-            "notes": "Shadow master assassin, outplay potential"
+            "notes": "Maître de l'ombre, potentiel d'outplay"
         },
         "zeri": {
             "tier": "B",
-            "notes": "Mobile ADC, skill-shot autos, inconsistent"
+            "notes": "ADC mobile, auto-attaques directionnelles, inconstante"
         },
         "ziggs": {
             "tier": "A",
-            "notes": "Siege king, execute tower, poke"
+            "notes": "Roi du siège, exécution des tours, harcèlement"
         },
         "zilean": {
             "tier": "B",
-            "notes": "Auto-generated - needs manual tier assignment"
+            "notes": "Auto-généré - nécessite une assignation manuelle de tier"
         },
         "zoe": {
             "tier": "A",
-            "notes": "One-shot with paddle star, sleep CC"
+            "notes": "One-shot avec l'étoile, CC de sommeil"
         },
         "zyra": {
             "tier": "A",
-            "notes": "Plant zone control, root, AOE knockup"
+            "notes": "Contrôle de zone par plantes, immobilisation, knockup en zone"
         }
     }
 }
